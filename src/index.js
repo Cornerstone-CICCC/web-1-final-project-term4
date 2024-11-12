@@ -2,13 +2,13 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-// ポート設定
+// port setting
 const PORT = process.env.PORT || 3000;
 
-// 静的ファイル（HTMLやCSSなど）のフォルダを設定
-app.use(express.static(path.join(__dirname, "public")));
+// static file (HTML, CSS, etc.) folder setting
+app.use(express.static(path.join(__dirname, "css")));
 
-// ルーティング設定
+// routing setting
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "pages", "/index.html"));
 });
