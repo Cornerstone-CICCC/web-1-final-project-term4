@@ -1,2 +1,6 @@
-//footer.scss
+//header.scss
 @import "variables";
+
+header {
+  color: $title-color;
+}
