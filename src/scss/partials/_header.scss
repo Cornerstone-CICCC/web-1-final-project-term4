@@ -1,6 +1,33 @@
 //header.scss
 @import "variables";
 
-header {
+.header {
   color: $title-color;
+  font-family: $font-title-family;
+  font-size: 20px;
+  &__item {
+    &.active {
+      border-bottom: 1px solid $title-color;
+    }
+  }
+}
+
+.footer {
+  color: $title-color;
+  font-family: $font-title-family;
+  font-size: 20px;
+  &__list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .footer {
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 50%;
+    }
+  }
 }
