@@ -8,65 +8,86 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-lg py-4">
-        <div class="container">
-          <ul class="header__list navbar-nav align-self-center">
-            <li class="header__item nav-item active"><a class="nav-link" href="/">Home</a></li>
-            <li class="header__item nav-item"><a class="nav-link" href="/portfolio">My Work</a></li>
-            <li class="header__item nav-item"><a class="nav-link" href="/services">Services</a></li>
-            <li class="header__item nav-item"><a class="nav-link" href="/">Classes</a></li>
-          </ul>
-          <div class="header__logo">
+      <nav class="header-nav navbar navbar-expand-lg py-4">
+        <div class="container flex-column flex-lg-row position-relative">
+          <div class="header-nav__cancel ps-3">
+            <button>
+              <img src="public/assets/images/icon-cancel.svg" alt="cancel" width="20" />
+            </button>
+          </div>
+          <div class="header-nav__logo--sp pb-4">
             <a href="/">
-              <img src="assets/images/logo.png" alt="Carla Beauty" width="126" />
+              <img src="public/assets/images/logo.png" alt="Carla Beauty" width="95" />
             </a>
           </div>
-          <ul class="header__list navbar-nav align-self-center">
-            <li class="header__item nav-item"><a class="nav-link" href="/">Beauty Tips</a></li>
-            <li class="header__item nav-item"><a class="nav-link" href="/about">About</a></li>
-            <li class="header__item nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="header__item nav-item">
-              <a class="header__item nav-link" href="#">
-                <img src="assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
+          <ul class="header-nav__list navbar-nav align-self-center">
+            <li class="header-nav__item nav-item active"><a class="nav-link" href="/">Home</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link" href="/portfolio">My Work</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link" href="/services">Services</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link" href="/Classes">Classes</a></li>
+          </ul>
+          <div class="header-nav__logo--pc px-4">
+            <a href="/">
+              <img src="public/assets/images/logo.png" alt="Carla Beauty" width="126" />
+            </a>
+          </div>
+          <ul class="header-nav__list navbar-nav align-self-center">
+            <li class="header-nav__item nav-item"><a class="nav-link" href="/beautytips">Beauty Tips</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link" href="/about">About</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+            <li class="header-nav__item--sns nav-item">
+              <a class="header-nav__icon nav-link" href="#">
+                <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
+              </a>
+              <a class="header-nav__icon--sp nav-link" href="#">
+                <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
+              </a>
+              <a class="header-nav__icon--sp nav-link" href="#">
+                <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
               </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main style="background-color: pink">testtest</main>
     <footer class="footer">
-      <div class="container text-center py-3 my-4">
-        <div>
-          <img src="assets/images/logo.png" alt="Carla Beauty" width="126" />
-          <div>Expert makeup and hairstyle studio</div>
-          <ul class="nav justify-content-center mb-3">
-            <li class="nav-item">
-              <a href="/" class="nav-link px-2">
-                <img src="assets/images/icon-call.svg" alt="call" />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="nav-link px-2">
-                <img src="assets/images/icon-sms.svg" alt="sms" />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="nav-link px-2">
-                <img src="assets/images/icon-instagram.svg" alt="instagram" />
-              </a>
-            </li>
+      <div class="container text-center py-4">
+        <div class="footer__logo">
+          <a href="/">
+            <img src="public/assets/images/logo.png" alt="Carla Beauty" width="126" />
+          </a>
+          <div class="footer__subtitle pt-3 pb-2">Expert makeup and hairstyle studio</div>
+        </div>
+        <ul class="footer__sns nav mb-4">
+          <li class="nav-item">
+            <a href="/" class="nav-link px-2">
+              <img src="public/assets/images/icon-call.svg" alt="call" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/" class="nav-link px-2">
+              <img src="public/assets/images/icon-sms.svg" alt="sms" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/" class="nav-link px-2">
+              <img src="public/assets/images/icon-instagram.svg" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+        <div class="footer-nav">
+          <ul class="footer-nav__list navbar-nav py-2">
+            <li class="footer-nav__item nav-item px-2 active"><a href="/" class="nav-link">Home</a></li>
+            <li class="footer-nav__item nav-item"><a href="/portfolio" class="nav-link px-2">My Work</a></li>
+            <li class="footer-nav__item nav-item"><a href="/services" class="nav-link px-2">Services</a></li>
+            <li class="footer-nav__item nav-item"><a href="/classes" class="nav-link px-2">Classes</a></li>
+            <li class="footer-nav__item nav-item"><a href="/beautytips" class="nav-link px-2">Beauty Tips</a></li>
+            <li class="footer-nav__item nav-item"><a href="/about" class="nav-link px-2">About</a></li>
+            <li class="footer-nav__item nav-item"><a href="/contact" class="nav-link px-2">Contact</a></li>
           </ul>
         </div>
-        <ul class="footer__list navbar-nav justify-content-around border-top border-bottom py-2 mb-3">
-          <li class="footer__item nav-item"><a href="/" class="nav-link px-2">Home</a></li>
-          <li class="footer__item nav-item"><a href="/portfolio" class="nav-link px-2">My Work</a></li>
-          <li class="footer__item nav-item"><a href="/services" class="nav-link px-2">Services</a></li>
-          <li class="footer__item nav-item"><a href="/" class="nav-link px-2">Beauty Tips</a></li>
-          <li class="footer__item nav-item"><a href="/about" class="nav-link px-2">About</a></li>
-          <li class="footer__item nav-item"><a href="#contact" class="nav-link px-2">Contact</a></li>
-        </ul>
-        <p class="text-center">Copyright 2024, Carla Beauty</p>
+        <p class="footer__copyright text-center my-4">Copyright 2024, Carla Beauty</p>
       </div>
     </footer>
   </body>

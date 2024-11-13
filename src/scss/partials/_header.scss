@@ -1,33 +1,105 @@
 //header.scss
-@import "variables";
-
 .header {
-  color: $title-color;
+  background: $light-white;
+  color: $bold-main-color;
   font-family: $font-title-family;
   font-size: 20px;
+}
+
+.header-nav {
+  &__logo {
+    &--sp {
+      display: none;
+    }
+    &--pc {
+      display: block;
+    }
+  }
+  &__list {
+    flex-grow: 1;
+    justify-content: space-around;
+  }
   &__item {
+    flex-grow: 1;
+    text-align: center;
+    &:nth-child(n + 2) {
+      border-left: 0.5px solid $accent-color;
+    }
     &.active {
-      border-bottom: 1px solid $title-color;
+      text-decoration: underline;
+      text-decoration-color: $bold-main-color;
+      text-decoration-thickness: 0.5px;
+      text-underline-offset: 3px;
     }
   }
 }
 
 .footer {
-  color: $title-color;
-  font-family: $font-title-family;
-  font-size: 20px;
-  &__list {
-    flex-direction: row;
+  background: $light-white;
+  color: $bold-main-color;
+  &__subtitle {
+    color: $dark-black;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  &__sns {
+    justify-content: center;
+    gap: 10px;
+  }
+  &__copyright {
+    font-family: $font-text;
+    font-size: 14px;
   }
 }
 
-@media screen and (max-width: 993px) {
-  .footer {
-    &__list {
-      flex-wrap: wrap;
+.footer-nav {
+  text-align: center;
+  border-top: 0.5px solid $dark-black;
+  border-bottom: 0.5px solid $dark-black;
+  &__list {
+    max-width: 1064px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: $font-title-family;
+    font-size: 20px;
+  }
+  &__item {
+    &.active {
+      text-decoration: underline;
+      text-decoration-color: $bold-main-color;
+      text-decoration-thickness: 0.5px;
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .header-nav {
+    &__logo {
+      &--sp {
+        display: block;
+      }
+      &--pc {
+        display: none;
+      }
     }
     &__item {
-      width: 50%;
+      &:nth-child(n + 2) {
+        border-left: none;
+      }
+    }
+    &__cancel {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .footer-nav {
+    &__list {
+      display: block;
+      column-count: 2;
     }
   }
 }
