@@ -6,7 +6,16 @@
   font-size: 20px;
 }
 
+.header-sp {
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: $light-white;
+  z-index: 100;
+}
+
 .header-nav {
+  background: $light-white;
   &__list {
     flex-grow: 1;
     justify-content: space-around;
@@ -68,12 +77,16 @@
 
 @include media-breakpoint-down(lg) {
   .header-nav {
+    position: fixed;
+    right: 0;
+    left: 0;
     &__item {
       &:nth-child(n + 2) {
         border-left: none;
       }
     }
-    &__cancel {
+    &__close {
+      height: 98px;
       position: absolute;
       top: 0;
       left: calc(var(--bs-gutter-x) * 0.5);
