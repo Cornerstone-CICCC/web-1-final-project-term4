@@ -1,4 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3kIK38sz)
+
 # Web 1 - Final Project (Team)
 
 **Goal:** Create a responsive Beauty website using the provided Figma mockup.
@@ -9,7 +10,7 @@
 2. The team leader should create the GitHub project and invite their other members. Make sure to link the repository to the project.
 3. Using the provided Figma mockup, recreate this design using HTML, CSS, and JavaScript: [https://www.figma.com/design/hdmA1VIakgC2Yxt0xDDIyY/BC-Beauty---WMAD%2BUI%2FUXDesign?node-id=4106-556&t=NlOw72RJgvIYu6Cb-1]
 4. Make sure to create and assign tasks to each member on the GitHub Project. Discuss and agree on a plan on how you will work together.
-5. Watch and compile your SCSS files by running `sass -w scss/:css/`
+5. Watch and compile your SCSS files by running `sass -w scss/:src/css`
 
 ## Reminders 🔔
 

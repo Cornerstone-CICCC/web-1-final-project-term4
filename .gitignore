@@ -1,3 +1,4 @@
 # Ignores the CSS directory. This will prevent the directory from getting committed to the repository. We need to do this to avoid merge conflicts.
 css/
 node_modules
+*.DS_Store
