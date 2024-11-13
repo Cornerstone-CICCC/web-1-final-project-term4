@@ -7,14 +7,6 @@
 }
 
 .header-nav {
-  &__logo {
-    &--sp {
-      display: none;
-    }
-    &--pc {
-      display: block;
-    }
-  }
   &__list {
     flex-grow: 1;
     justify-content: space-around;
@@ -76,24 +68,20 @@
 
 @include media-breakpoint-down(lg) {
   .header-nav {
-    &__logo {
-      &--sp {
-        display: block;
-      }
-      &--pc {
-        display: none;
-      }
-    }
     &__item {
       &:nth-child(n + 2) {
         border-left: none;
       }
     }
     &__cancel {
-      display: block;
       position: absolute;
       top: 0;
-      left: 0;
+      left: calc(var(--bs-gutter-x) * 0.5);
+    }
+    &__copyright {
+      color: $dark-black;
+      font-family: $font-text;
+      font-size: 14px;
     }
   }
   .footer-nav {

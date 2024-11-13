@@ -8,14 +8,25 @@
   </head>
   <body>
     <header class="header">
+      <div class="container justify-content-between align-items-center d-flex d-lg-none py-4 js-header-sp">
+        <button class="header-nav__menu js-header-sp-open">
+          <img src="public/assets/images/icon-menu.svg" alt="menu" width="40" />
+        </button>
+        <div class="header-nav__logo">
+          <a href="/">
+            <img src="public/assets/images/logo.png" class="js-header-sp-logo" alt="Carla Beauty" width="95" />
+          </a>
+        </div>
+        <a href="/">
+          <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="38" />
+        </a>
+      </div>
       <nav class="header-nav navbar navbar-expand-lg py-4">
-        <div class="container flex-column flex-lg-row position-relative">
-          <div class="header-nav__cancel ps-3">
-            <button>
-              <img src="public/assets/images/icon-cancel.svg" alt="cancel" width="20" />
-            </button>
-          </div>
-          <div class="header-nav__logo--sp pb-4">
+        <div class="container flex-column flex-lg-row position-relative js-header-sp-full">
+          <button class="header-nav__cancel d-block d-lg-none js-header-sp-close">
+            <img src="public/assets/images/icon-cancel.svg" alt="cancel" width="40" />
+          </button>
+          <div class="header-nav__logo d-block d-lg-none pb-4">
             <a href="/">
               <img src="public/assets/images/logo.png" alt="Carla Beauty" width="95" />
             </a>
@@ -26,7 +37,7 @@
             <li class="header-nav__item nav-item"><a class="nav-link" href="/services">Services</a></li>
             <li class="header-nav__item nav-item"><a class="nav-link" href="/Classes">Classes</a></li>
           </ul>
-          <div class="header-nav__logo--pc px-4">
+          <div class="header-nav__logo d-none d-lg-block px-4">
             <a href="/">
               <img src="public/assets/images/logo.png" alt="Carla Beauty" width="126" />
             </a>
@@ -35,18 +46,30 @@
             <li class="header-nav__item nav-item"><a class="nav-link" href="/beautytips">Beauty Tips</a></li>
             <li class="header-nav__item nav-item"><a class="nav-link" href="/about">About</a></li>
             <li class="header-nav__item nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-            <li class="header-nav__item--sns nav-item">
-              <a class="header-nav__icon nav-link" href="#">
-                <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
-              </a>
-              <a class="header-nav__icon--sp nav-link" href="#">
-                <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
-              </a>
-              <a class="header-nav__icon--sp nav-link" href="#">
+            <li class="header-nav__item d-none d-lg-block nav-item">
+              <a class="nav-link" href="/">
                 <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
               </a>
             </li>
           </ul>
+          <ul class="header-nav__sns d-block d-lg-none d-flex d-lg-none nav mt-4">
+            <li class="nav-item">
+              <a href="/" class="nav-link px-2">
+                <img src="public/assets/images/icon-call.svg" alt="call" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link px-2">
+                <img src="public/assets/images/icon-sms.svg" alt="sms" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link px-2">
+                <img src="public/assets/images/icon-instagram.svg" alt="instagram" />
+              </a>
+            </li>
+          </ul>
+          <p class="header-nav__copyright d-block d-lg-none text-center mt-3 mb-2">Copyright 2024, Carla Beauty</p>
         </div>
       </nav>
     </header>
