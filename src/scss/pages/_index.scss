@@ -32,3 +32,291 @@ body {
 .brand {
   margin-top: 15px;
 }
+
+/* Background color for the section */
+body.bg-light-pink {
+  background-color: #f9eaea;
+}
+
+/* Title styling */
+h1.display-4 {
+  color: #6b4e4e;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Button styling */
+.btn-outline-dark {
+  border-color: #6b4e4e;
+  color: #6b4e4e;
+}
+
+.btn-outline-dark:hover {
+  background-color: #6b4e4e;
+  color: #fff;
+}
+
+/* Gallery images */
+.row .col-md-3 img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.row .col-md-3 img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonial styling */
+.testimonial {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #6b4e4e;
+}
+
+.quote-icon {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-top: -1rem;
+}
+
+.testimonial-author {
+  font-family: "Cursive", sans-serif;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.testimonial-nav .nav-arrow {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #6b4e4e;
+}
+
+.testimonial-nav .nav-arrow:hover {
+  color: #d96e6e;
+}
+
+/* Background color for the section */
+body.bg-light-pink {
+  background-color: #f9eaea;
+}
+
+/* Title styling */
+h1.display-4 {
+  color: #6b4e4e;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Button styling */
+.btn-outline-dark {
+  border-color: #6b4e4e;
+  color: #6b4e4e;
+}
+
+.btn-outline-dark:hover {
+  background-color: #6b4e4e;
+  color: #fff;
+}
+
+/* Service card styling */
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #f3e4e1;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service-card img {
+  border-radius: 8px;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Service label styling */
+.service-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #6b4e4e;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Cursive", sans-serif;
+}
+
+/* Background color for the section */
+body.bg-light-pink {
+  background-color: #f9eaea;
+}
+
+/* Title styling */
+h1.display-4 {
+  color: #6b4e4e;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Class information styling */
+.class-info {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.class-title {
+  font-size: 1.5rem;
+  color: #6b4e4e;
+  font-weight: 600;
+}
+
+.class-description {
+  color: #8a7a7a;
+  font-size: 1rem;
+}
+
+.class-info::before {
+  content: "🏆"; /* Use a relevant icon */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: #d96e6e;
+}
+
+/* Button styling */
+.btn-outline-dark {
+  border-color: #6b4e4e;
+  color: #6b4e4e;
+}
+
+.btn-outline-dark:hover {
+  background-color: #6b4e4e;
+  color: #fff;
+}
+
+/* Image container styling */
+.image-container {
+  padding: 10px;
+  border: 2px solid #f3e4e1;
+  border-radius: 8px;
+}
+
+.image-container img {
+  border-radius: 8px;
+}
+
+/* Background color for the section */
+body.bg-light-pink {
+  background-color: #f9eaea;
+}
+
+/* Title styling */
+h2.display-4 {
+  color: #6b4e4e;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Video card styling */
+.video-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+/* Video overlay styling */
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.video-play-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Button styling */
+.btn-outline-dark {
+  border-color: #6b4e4e;
+  color: #6b4e4e;
+}
+
+.btn-outline-dark:hover {
+  background-color: #6b4e4e;
+  color: #fff;
+}
+
+/* Background color for the section */
+body.bg-light-pink {
+  background-color: #f9eaea;
+}
+
+/* Title styling */
+h2.display-4 {
+  color: #6b4e4e;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Form container styling */
+.form-container {
+  background-color: #f9e3e3;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 600px;
+  border: 1px solid #e0cccc;
+}
+
+/* Form labels */
+.form-group label {
+  color: #6b4e4e;
+}
+
+/* Event Type Buttons */
+.btn-group-toggle .btn {
+  font-weight: bold;
+  color: #6b4e4e;
+  background-color: #fff;
+  border-color: #6b4e4e;
+}
+
+.btn-group-toggle .btn.active {
+  background-color: #6b4e4e;
+  color: #fff;
+}
+
+/* Submit Button styling */
+.btn-outline-dark {
+  border-color: #6b4e4e;
+  color: #6b4e4e;
+}
+
+.btn-outline-dark:hover {
+  background-color: #6b4e4e;
+  color: #fff;
+}
