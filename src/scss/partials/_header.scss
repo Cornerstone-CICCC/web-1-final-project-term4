@@ -18,7 +18,7 @@ main {
 .header {
   background: $light-white;
   color: $bold-main-color;
-  font-family: $font-title-family;
+  font-family: $font-title;
   font-size: 20px;
 }
 
@@ -71,7 +71,8 @@ main {
   $sp-transition-speed: 0.3s;
 
   main {
-    transition: padding $sp-transition-speed ease, transform $sp-transition-speed ease;
+    transition: padding $sp-transition-speed ease,
+      transform $sp-transition-speed ease;
     padding-top: $sp-header-height-large;
     &.is-nav-small {
       padding-top: $sp-header-height-small;
@@ -83,7 +84,8 @@ main {
     left: 0;
     background: $light-white;
     z-index: 10;
-    transition: padding $sp-transition-speed ease, transform $sp-transition-speed ease;
+    transition: padding $sp-transition-speed ease,
+      transform $sp-transition-speed ease;
     padding: $sp-padding-large 0;
     .header-sp__logo img {
       height: $sp-logo-large;
