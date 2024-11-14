@@ -1,28 +1,65 @@
 //services.scss
 .services {
-  background-color: #fae9e7;
+  background-color: $light-pink;
 }
 
 .services-card {
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    > * {
+      margin-bottom: 0;
+    }
+  }
   h2 {
-    //TODO font-family, color change to variable
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-title;
     font-size: 40px;
-    color: #725a58;
+    color: $bold-main-color;
   }
   h3 {
-    //TODO font-family, color change to variable
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-title;
     font-size: 24px;
-    color: #191919;
+    color: $dark-black;
   }
-  p {
+  p,
+  span {
     font-size: 18px;
-    color: #191919;
+    color: $dark-black;
   }
   button {
-    padding: 16px 30px;
-    border: 0.8px solid #5e4a49;
+    width: 170px;
+    font-family: $font-title;
+    color: $bold-main-color;
+    padding: 14px 0;
+    border: 0.8px solid $bold-main-color;
     font-size: 20px;
+    transition: 0.2s;
+    &:hover {
+      color: $light-white;
+      border: 0.8px solid $complementary-pink;
+      background-color: $complementary-pink;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .services-card {
+    h2 {
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    p,
+    span {
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 12px 0;
+      border: 0.8px solid $bold-main-color;
+      font-size: 20px;
+    }
   }
 }

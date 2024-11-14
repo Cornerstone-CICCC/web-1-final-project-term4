@@ -20,6 +20,11 @@ $complementary-brown: #a06b67;
 $font-title: "Baskervville", sans-serif;
 $font-text: "Lato", sans-serif;
 
+//TODO move to style.scss
+main {
+  background: $light-white;
+}
 body {
   font-family: $font-text;
+  color: $dark-black;
 }
