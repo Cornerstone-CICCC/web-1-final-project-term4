@@ -93,25 +93,33 @@ h1.display-4 {
 /* Service card styling */
 .service-card {
   position: relative;
-  overflow: hidden;
-  // border: 2px solid #f3e4e1;
-  padding: 10px;
   margin: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 /* Service label styling */
-.service-label {
+.service-label-side {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: #6b4e4e;
-  font-size: 1.5rem;
+  bottom: 30px;
+  left: -10px;
+  color: #b99692;
+  font-size: 2.6rem;
   font-weight: 700;
   font-family: $font-title-family;
-  mix-blend-mode: difference;
-  background-color: #000;
+  mix-blend-mode: screen;
+}
+
+/* Service label styling */
+.service-label-center {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+  color: #b99692;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: $font-title-family;
+  mix-blend-mode: screen;
 }
 
 /* Title styling */
@@ -558,7 +566,7 @@ h2.display-4 {
 }
 
 .section-image-center {
-  height: 384px;
-  width: 300px;
+  height: 420px;
+  width: 360px;
   object-fit: cover;
 }
