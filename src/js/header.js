@@ -2,21 +2,21 @@
 
 //header size
 const main = document.querySelector("main");
-const spHeader = document.getElementById("js-header-sp");
-const pcHeader = document.getElementById("js-header-pc");
-const pcLogo = document.getElementById("js-header-pc-logo");
+const spHeader = document.getElementById("js-nav-sp");
+const pcHeader = document.getElementById("js-nav-pc");
+const pcLogo = document.getElementById("js-nav-pc-logo");
 
 function changeHeaderSize() {
   const currentY = window.scrollY;
   if (currentY > 0) {
-    main.classList.add("nav-small");
-    spHeader.classList.add("nav-small");
-    pcHeader.classList.add("nav-small");
+    main.classList.add("is-nav-small");
+    spHeader.classList.add("is-nav-small");
+    pcHeader.classList.add("is-nav-small");
     pcLogo.src = "public/assets/images/logo-small.png";
   } else {
-    main.classList.remove("nav-small");
-    spHeader.classList.remove("nav-small");
-    pcHeader.classList.remove("nav-small");
+    main.classList.remove("is-nav-small");
+    spHeader.classList.remove("is-nav-small");
+    pcHeader.classList.remove("is-nav-small");
     pcLogo.src = "public/assets/images/logo.png";
   }
 }
@@ -36,22 +36,22 @@ window.addEventListener("scroll", () => {
 });
 
 //hamburger
-const headerOpen = document.getElementById("js-header-pc");
-const btnClose = document.getElementById("js-header-sp-btn-close");
-const btnOpen = document.getElementById("js-header-sp-btn-open");
+const headerOpen = document.getElementById("js-nav-pc");
+const btnClose = document.getElementById("js-nav-sp-btn-close");
+const btnOpen = document.getElementById("js-nav-sp-btn-open");
 const stopScroll = (event) => {
   event.preventDefault();
 };
 
-function openMenu() {
-  headerOpen.style.display = "block";
+function openNav() {
+  headerOpen.classList.add("is-nav-open");
   document.addEventListener("touchmove", stopScroll, { passive: false });
   document.addEventListener("mousewheel", stopScroll, { passive: false });
 }
-function closeMenu() {
-  headerOpen.style.display = "none";
+function closeNav() {
+  headerOpen.classList.remove("is-nav-open");
   document.removeEventListener("touchmove", stopScroll);
   document.removeEventListener("mousewheel", stopScroll);
 }
-btnOpen.addEventListener("click", openMenu);
-btnClose.addEventListener("click", closeMenu); // メニュー開閉状態のフラグ
+btnOpen.addEventListener("click", openNav);
+btnClose.addEventListener("click", closeNav);
