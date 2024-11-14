@@ -1,12 +1,19 @@
 //common.scss
+
+//TODO confirm max-width on other page
+.container > div {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .content-headline {
   display: block;
   max-width: 585px;
   &__title {
     //TODO font-family, color change to variable
     font-family: Arial, Helvetica, sans-serif;
-    color: #725a58;
     font-size: 80px;
+    color: #725a58;
     position: relative;
   }
   &__border {

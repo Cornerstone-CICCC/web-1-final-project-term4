@@ -1,6 +1,23 @@
 //services.scss
 .services {
   background-color: #fae9e7;
-  &__img {
+}
+
+.services-card {
+  h2 {
+    //TODO font-family, color change to variable
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #725a58;
+  }
+  h3 {
+    //TODO font-family, color change to variable
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #191919;
+  }
+  p {
+    font-size: 18px;
+    color: #191919;
   }
 }
