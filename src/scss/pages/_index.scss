@@ -1,7 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
 .signature {
   font-family: "Cursive", sans-serif;
   font-size: 24px;
@@ -10,11 +6,6 @@ body {
 
 .brand {
   margin-top: 15px;
-}
-
-/* Background color for the section */
-body.bg-light-pink {
-  background-color: #f9eaea;
 }
 
 /* Title styling */
@@ -81,11 +72,6 @@ h1.display-4 {
   color: #d96e6e;
 }
 
-/* Background color for the section */
-body.bg-light-pink {
-  background-color: #f9eaea;
-}
-
 /* Title styling */
 h1.display-4 {
   color: #6b4e4e;
@@ -108,19 +94,11 @@ h1.display-4 {
 .service-card {
   position: relative;
   overflow: hidden;
-  border: 2px solid #f3e4e1;
+  // border: 2px solid #f3e4e1;
   padding: 10px;
   margin: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease;
-}
-
-.service-card img {
-  border-radius: 8px;
-}
-
-.service-card:hover {
-  transform: scale(1.05);
 }
 
 /* Service label styling */
@@ -131,12 +109,9 @@ h1.display-4 {
   color: #6b4e4e;
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: "Cursive", sans-serif;
-}
-
-/* Background color for the section */
-body.bg-light-pink {
-  background-color: #f9eaea;
+  font-family: $font-title-family;
+  mix-blend-mode: difference;
+  background-color: #000;
 }
 
 /* Title styling */
@@ -182,11 +157,6 @@ h1.display-4 {
 .btn-outline-dark:hover {
   background-color: #6b4e4e;
   color: #fff;
-}
-
-/* Background color for the section */
-body.bg-light-pink {
-  background-color: #f9eaea;
 }
 
 /* Title styling */
@@ -237,11 +207,6 @@ h2.display-4 {
 .btn-outline-dark:hover {
   background-color: #6b4e4e;
   color: #fff;
-}
-
-/* Background color for the section */
-body.bg-light-pink {
-  background-color: #f9eaea;
 }
 
 /* Title styling */
@@ -314,7 +279,6 @@ h2.display-4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
     gap: 20px;
   }
   &__subtitle {
@@ -352,6 +316,16 @@ h2.display-4 {
   background-size: cover;
   width: 100%;
   filter: grayscale(100%);
+}
+
+.card-container {
+  width: 320px;
+  height: 400px;
+  border: 1px solid #e3b6b1;
+  position: absolute;
+  top: -24px;
+  left: 24px;
+  z-index: -1;
 }
 
 .profile-card {
@@ -460,7 +434,6 @@ h2.display-4 {
       // 黒色にする
       filter: grayscale(100%);
     }
-    
   }
 
   &__second-row {
@@ -479,3 +452,113 @@ h2.display-4 {
   }
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding-top: 72px;
+  padding-bottom: 64px;
+  &__title {
+    font-size: 4rem;
+    font-family: $font-title-family;
+    color: #5e4e49;
+  }
+  &__subtitle {
+    font-size: 1.2rem;
+    font-family: $font-text;
+    color: #5e4e49;
+    width: 480px;
+    text-align: center;
+    line-height: 24px;
+  }
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.makeup-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
+  &__image-container {
+    width: 332px;
+    object-fit: cover;
+  }
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .quote {
+    font-size: 2.4rem;
+    font-family: $font-title-family;
+    text-wrap: balance;
+    color: #5e4e49;
+    text-align: center;
+    line-height: 48px;
+  }
+}
+
+.testimonial-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin-top: 40px;
+  &__arrow {
+    width: 40px;
+    font-size: 2rem;
+    color: #5e4e49;
+    cursor: pointer;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 72px;
+  padding-bottom: 64px;
+  &__title {
+    width: 480px;
+    font-size: 5rem;
+    text-align: center;
+    font-family: $font-title-family;
+    color: #725a58;
+  }
+  &__description {
+    font-size: 1.2rem;
+    font-family: $font-text;
+    color: #5e4e49;
+    width: 480px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 300;
+  }
+}
+
+.section-image-side {
+  height: 384px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.section-image-center {
+  height: 384px;
+  width: 300px;
+  object-fit: cover;
+}
