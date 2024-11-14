@@ -4,11 +4,11 @@ const path = require("path");
 
 // port setting
 const PORT = process.env.PORT || 3000;
-app.use("/public", express.static("public"));
 
 // static file (HTML, CSS, etc.) folder setting
 app.use(express.static(path.join(__dirname, "css")));
-app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.static(path.join(__dirname, "js")));
+app.use("/public", express.static("public"));
 
 // routing setting
 app.get("/", (req, res) => {
