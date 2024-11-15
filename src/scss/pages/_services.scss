@@ -1,13 +1,21 @@
 //services.scss
 .services {
   background-color: $light-pink;
+  .container {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .services-card__img {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
 }
 
 .services-card {
   &__detail {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 24px;
     > * {
       margin-bottom: 0;
     }
@@ -46,6 +54,7 @@
 @include media-breakpoint-down(lg) {
   .services-card {
     h2 {
+      margin-top: 24px;
       font-size: 36px;
     }
     h3 {
@@ -60,6 +69,20 @@
       padding: 12px 0;
       border: 0.8px solid $bold-main-color;
       font-size: 20px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .services {
+    background-color: $light-pink;
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .services-card__img {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
