@@ -9,13 +9,18 @@
     color: $bold-main-color;
     position: relative;
   }
+  &__subtitle {
+    font-family: $font-title;
+    font-size: 48px;
+    color: $complementary-pink;
+  }
   &__border {
     display: block;
     border-bottom: 1px solid $accent-color;
     margin: 0 auto;
     width: 200px;
   }
-  &__subtitle {
+  &__text {
     max-width: 585px;
     color: $brand-color;
     font-size: 18px;
@@ -29,6 +34,9 @@
       letter-spacing: 3.6px;
     }
     &__subtitle {
+      font-size: 36px;
+    }
+    &__text {
       font-size: 16px;
       max-width: unset;
     }
