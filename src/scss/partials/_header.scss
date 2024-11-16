@@ -8,6 +8,7 @@ $header-height-small: $logo-small + $padding-small * 2;
 $transition-speed: 0.5s;
 
 main {
+  overflow: hidden;
   transition: padding $transition-speed ease, transform $transition-speed ease;
   padding-top: $header-height-large;
   &.is-nav-small {
