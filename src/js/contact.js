@@ -48,9 +48,18 @@ $(document).ready(function () {
 const form = document.getElementById("contact-form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  let mail = new FormData(form);
-  // TODO delete
-  console.log(mail);
+  let fields = new FormData(form);
+  // TODO fix mail content
+  // const eventType = document.getElementById("event-type").querySelector(".selected").textContent;
+  // const eventDate =
+  //   !document.getElementById("not-decided-date").checked && document.getElementById("event-date").value
+  //     ? document.getElementById("event-date").value
+  //     : "not-decided";
+  // const eventTime =
+  //   !document.getElementById("not-decided-time").checked && document.getElementById("event-time").value
+  //     ? document.getElementById("event-time").value
+  //     : "not-decided";
+  // const name = document.getElementById("event-name").value;
   sendMail(mail);
 });
 function sendMail(mail) {
