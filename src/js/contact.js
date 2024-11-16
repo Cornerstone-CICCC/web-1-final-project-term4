@@ -1,20 +1,13 @@
 // Select all radio buttons with the name 'contact-method'
-const contactMethods = document.querySelectorAll(
-  'input[name="contact-method"]'
-);
+const contactMethods = document.querySelectorAll('input[name="contact-method"]');
 const phoneInput = document.getElementById("phone-input");
 
 // Function to toggle visibility of the phone input based on selected option
 function togglePhoneInput() {
-  const selectedMethod = document.querySelector(
-    'input[name="contact-method"]:checked'
-  );
+  const selectedMethod = document.querySelector('input[name="contact-method"]:checked');
 
   // Show phone input only if "Call" is selected (based on data-target attribute)
-  if (
-    selectedMethod &&
-    selectedMethod.getAttribute("data-target") === "phone-input"
-  ) {
+  if (selectedMethod && selectedMethod.getAttribute("data-target") === "phone-input") {
     phoneInput.style.display = "flex"; // Show as flex
   } else {
     phoneInput.style.display = "none"; // Hide it
@@ -50,3 +43,21 @@ $(document).ready(function () {
     showAnim: "slideDown",
   });
 });
+
+// Send Email when click submit button
+const form = document.getElementById("contact-form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  let mail = new FormData(form);
+  // TODO delete
+  console.log(mail);
+  sendMail(mail);
+});
+function sendMail(mail) {
+  fetch("/send", {
+    method: "post",
+    body: mail,
+  }).then((response) => {
+    return response.json();
+  });
+}

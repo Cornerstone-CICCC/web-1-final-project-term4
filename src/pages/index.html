@@ -329,45 +329,45 @@
       <div class="form-container p-5 mt-4 mx-auto">
         <h4 class="font-weight-bold text-center mb-4">Services</h4>
         <hr width="500px" size="20px" />
-        <form class="column gap-4 align-items-start">
+        <form id="contact-form" method="post" action="/send" enctype="multipart/form-data" class="column gap-4 align-items-start">
 
           <div class="event-type-container gap-5">
             <div>
               <div class="event-title">Event Type</div>
               <div class="event-options">
-                <div class="event-option selected">Wedding</div>
-                <div class="event-option">Party </div>
-                <div class="event-option">Photoshoot</div>
+                <div class="event-option selected" name="event-type">Wedding</div>
+                <div class="event-option" name="event-type">Party</div>
+                <div class="event-option" name="event-type">Photoshoot</div>
               </div>
             </div>
-
+        
             <div class="d-flex gap-3">
               <div class="d-flex flex-column gap-1">
                 <div class="event-title">Event Date</div>
                 <div class="date-picker event-date">
-                  <input type="text" id="event-date" placeholder="Select Date">
+                  <input type="text" id="event-date" name="event-date" placeholder="Select Date">
                 </div>
                 <div class="d-flex gap-2">
                   <label class="d-flex gap-2 mt-2" for="not-decided-date">
-                    <input type="checkbox" value="" id="not-decided-date">
+                    <input type="checkbox" id="not-decided-date" name="not-decided-date">
                     Not decided
                   </label>
                 </div>
               </div>
-
+        
               <div class="d-flex flex-column gap-1">
                 <div class="event-title">Event Time</div>
                 <div class="date-picker">
-                  <select>
+                  <select name="event-time">
                     <option>Full day</option>
                     <option>Morning</option>
                     <option>Afternoon</option>
                     <option>Evening</option>
                   </select>
                 </div>
-
+        
                 <label class="d-flex gap-2 mt-2" for="not-decided-time">
-                  <input type="checkbox" value="" id="not-decided-time">
+                  <input type="checkbox" id="not-decided-time" name="not-decided-time">
                   Not decided
                 </label>
               </div>
@@ -376,10 +376,9 @@
             </div>
             <div style="width: 100%;">
               <div class="event-title">Name</div>
-              <input type="text" class="event-name" placeholder="Your name" />
+              <input type="text" class="event-name" name="name" placeholder="Your name" />
             </div>
-
-
+        
             <div style="width: 100%;">
               <div class="event-title">Contact</div>
               <div class="contact-method-container">
@@ -388,15 +387,15 @@
                   Call
                 </label>
                 <div class="phone-input" id="phone-input">
-                  <select class="country-code">
+                  <select class="country-code" name="country-code">
                     <option>+1</option>
                     <option>+44</option>
                     <option>+91</option>
                     <!-- Add more country codes as needed -->
                   </select>
-                  <input type="text" placeholder="Your mobile number">
+                  <input type="text" placeholder="Your mobile number" name="phone-number">
                 </div>
-
+        
                 <label class="contact-option">
                   <input type="radio" name="contact-method">
                   WhatsApp
@@ -411,17 +410,15 @@
                 </label>
               </div>
             </div>
-
-
           </div>
-
-          <button type="submit" class="primary-btn primary- primary-btn-block mt-4">
+        
+          <button type="submit" value="submit" class="primary-btn primary- primary-btn-block mt-4">
             Submit
           </button>
+        </form>
       </div>
     </div>
 
-    </form>
     </div>
     </div>
   </main>
