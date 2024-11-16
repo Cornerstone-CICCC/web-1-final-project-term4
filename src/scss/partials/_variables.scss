@@ -28,3 +28,8 @@ body {
   font-family: $font-text;
   color: $dark-black;
 }
+//TODO confirm max-width on other page
+.container > div {
+  max-width: 1024px;
+  margin: 0 auto;
+}
