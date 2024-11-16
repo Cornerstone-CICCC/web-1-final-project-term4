@@ -53,6 +53,9 @@
 
 @include media-breakpoint-down(lg) {
   .services-card {
+    &__detail {
+      gap: 16px;
+    }
     h2 {
       margin-top: 24px;
       font-size: 36px;
