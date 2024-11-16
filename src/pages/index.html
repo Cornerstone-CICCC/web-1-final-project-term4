@@ -226,6 +226,7 @@
       </div>
       <div class="col-md-4 text-center">
         <div class="service-card">
+          <div class="service-card-border"></div>
           <img src="/public/assets/images/women/6.png" alt="Wedding Look" class="section-image-center" />
           <p class="service-label-center">Wedding</p>
         </div>
@@ -237,84 +238,118 @@
         </div>
       </div>
     </div>
-    <div class="container py-5 w-25">
-      <!-- Title Section -->
-      <div class="text-center mb-5">
-        <h1 class="display-4 font-weight-bold">MAKE UP 101</h1>
+
+    <section class="makeup-section">
+      <!-- Title -->
+      <div class="makeup-title">
+        <p style="margin-top:24px; ">MAKE UP </p>
+        <p style=" transform: scale(1, 1.5); letter-spacing:12px;"> 101</p>
       </div>
 
-      <div class="row align-items-center">
-        <!-- Class Information Section -->
-        <div class="col-md-6">
-          <div class="class-info mb-4">
-            <h3 class="class-title">1-on-1 Master Class</h3>
-            <p class="class-description">
-              Customize your learning experience to excel in your chosen areas,
-              all at your own pace.
-            </p>
+      <!-- Content Container -->
+      <div class="makeup-content">
+
+        <!-- Left Side: Class Information -->
+        <div class="makeup-classes">
+          <!-- 1-on-1 Master Class -->
+          <div class="class-item">
+            <div>
+              <div class="class-title">
+                <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
+                <span class="class-text-one">1</span>-on-<span class="class-text-one">1</span> Master Class
+              </div>
+              <p class="class-description">
+                Customize your learning experience to excel in your chosen areas, all at your own pace.
+              </p>
+            </div>
+            <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
+
           </div>
-          <div class="class-info mb-4">
-            <h3 class="class-title">Professional 1-day Workshop</h3>
-            <p class="class-description">
-              Discover popular and practical techniques to apply right away!
-            </p>
+
+          <!-- Professional 1-day Workshop -->
+          <div class="class-item">
+            <div>
+              <div class="class-title">
+                <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
+
+                Professional <span class="class-text-one">1</span>-day Workshop
+              </div>
+              <p class="class-description">
+                Discover popular and practical techniques to apply right away!
+              </p>
+            </div>
+            <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
           </div>
-          <div class="class-info mb-4">
-            <h3 class="class-title">Self-Makeup Beginner Class</h3>
-            <p class="class-description">
-              Learn the basics, practice doing your own makeup and make new
-              friends in the process!
-            </p>
+
+          <!-- Self-Makeup Beginner Class -->
+          <div class="class-item">
+            <div>
+              <div class="class-title">
+                <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
+                Self-Makeup Beginner Class
+              </div>
+              <p class="class-description">
+                Learn the basics, practice doing your own makeup and make new friends in the process!
+              </p>
+            </div>
+            <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
           </div>
-          <button class="primary-btn primary- mt-3">All Classes</button>
+
+          <!-- All Classes Button -->
+          <button class="primary-btn">All Classes</button>
         </div>
 
-        <!-- Image Section -->
-        <div class="col-md-6 text-center">
-          <div class="image-container">
-            <img src="class-image.jpg" alt="Makeup Instructor" class="img-fluid rounded" />
-          </div>
+        <!-- Right Side: Image -->
+        <!-- 画像内に白の枠線を追加する -->
+        <div class="makeup-image-container">
+          <div class="makeup-image-border"></div>
+          <img src="public/assets/images/women/makeup-instructor.png" alt="Makeup Instructor" class="makeup-image" />
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container text-center py-5">
-      <!-- Title Section -->
-      <h2 class="display-4 font-weight-bold mb-4">DIY Beauty Corner</h2>
+    <section class="beauty-corner">
+      <!-- Title -->
+      <h2 class="beauty-title">DIY Beauty Corner</h2>
 
-      <!-- Video Thumbnails Section -->
-      <div class="row justify-content-center">
-        <div class="col-md-4 mb-4">
-          <div class="video-card position-relative">
-            <img src="video1.jpg" alt="Video 1" class="img-fluid rounded" />
+      <!-- Video Thumbnails Container -->
+      <div class="slider-container">
+        <div class="video-thumbnails">
+          <!-- Video 1 -->
+          <div class="video-card">
+            <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
+            <img src="/public/assets/images/instagrams-posts/1.jpeg" alt="Make up Be a queen" class="video-image">
             <div class="video-overlay">
-              <span class="video-play-icon">▶</span>
               <p class="video-description">✨Make up ✨ Be a queen in...</p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="video-card position-relative">
-            <img src="video2.jpg" alt="Video 2" class="img-fluid rounded" />
+
+          <!-- Video 2 -->
+          <div class="video-card">
+            <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
+            <img src="/public/assets/images/instagrams-posts/2.jpeg" alt="Produce a beautiful bride"
+              class="video-image">
             <div class="video-overlay">
-              <span class="video-play-icon">▶</span>
-              <p class="video-description">Produce a beautiful bride ✨...</p>
+              <p class="video-description">Produce a beautiful bride✨...</p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="video-card position-relative">
-            <img src="video3.jpg" alt="Video 3" class="img-fluid rounded" />
+
+          <!-- Video 3 -->
+          <div class="video-card">
+            <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
+            <img src="/public/assets/images/instagrams-posts/3.jpeg" alt="How to do stunning hair in 3"
+              class="video-image">
             <div class="video-overlay">
-              <span class="video-play-icon">▶</span>
               <p class="video-description">How to do stunning hair in 3...</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Button Section -->
-      <button class="primary-btn mt-3">More Beauty Tips</button>
+      <!-- Button for More Tips -->
+      <button class="primary-btn">More Beauty Tips</button>
+    </section>
+
     </div>
 
     <div class="container text-center py-5">
@@ -474,6 +509,8 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="contact.js"></script>
   <script type="text/javascript" src="header.js"></script>
+  <script type="text/javascript" src="slider.js"></script>
+
   <script src="../index.js"></script>
 </body>
 
