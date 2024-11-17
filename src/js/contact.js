@@ -51,7 +51,15 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData.entries());
   sendMail(data);
+  resetForm();
 });
+
+function resetForm() {
+  const eventType = document.getElementById("event-type");
+  eventType.querySelector(".selected").classList.remove("selected");
+  eventType.firstElementChild.classList.add("selected");
+  document.getElementById("contact-form").reset();
+}
 
 async function sendMail(data) {
   try {
