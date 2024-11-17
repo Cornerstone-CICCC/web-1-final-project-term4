@@ -196,13 +196,13 @@ input[type="checkbox"]::before {
   width: 24px;
   height: 24px;
   background: #fff;
-  border: solid 1px #e3b6b1;
+  border: solid 1px $accent-color;
   border-radius: 0;
 }
 
 // チェックボックスの背景をチェック後に変更
 input[type="checkbox"]:checked::before {
-  background-color: #e3b6b1;
+  background-color: $accent-color;
 }
 
 // チェックマークのデザイン
@@ -229,7 +229,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .event-name {
-  border: 1px solid #e3b6b1;
+  border: 1px solid $accent-color;
   padding: 8px 16px;
   font-size: 1.2rem;
   color: #5e4e49;
@@ -306,7 +306,7 @@ input[type="radio"] {
   -moz-appearance: none;
   width: 1.2rem;
   height: 1.2rem;
-  border: 1px solid #e3b6b1;
+  border: 1px solid $accent-color;
   border-radius: 50%;
   outline: none;
   cursor: pointer;

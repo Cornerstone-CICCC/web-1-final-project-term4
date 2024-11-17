@@ -1,9 +1,57 @@
+.profile {
+  .profile-container {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+
+  &__content-row {
+    // row align-items-center justify-content-center my-5
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    gap: 10vmin;
+  }
+  &__bio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 520px;
+    &__title {
+      font-size: 3rem;
+      font-family: $font-title;
+      color: $dark-black;
+      width: 100%;
+    }
+    &__text {
+      font-size: 20px;
+      font-family: "Avenir", sans-serif;
+      color: #535353;
+      line-height: 24px;
+      max-width: 480px;
+    }
+    &__signature {
+      display: flex;
+      gap: 80px;
+      align-items: flex-end;
+    }
+  }
+}
+
 .profile-card {
   width: 320px;
   height: 400px;
   position: relative;
   display: inline-block;
-  z-index: 1;
+  &__card-frame {
+    width: 320px;
+    height: 400px;
+    border: 1px solid $accent-color;
+    position: absolute;
+    top: -24px;
+    left: 24px;
+    z-index: 0;
+  }
   &__account-name {
     font-size: 1.2rem;
     font-family: $font-text;
@@ -31,17 +79,9 @@
     border-left: 0.5px solid #888888;
     border-right: 0.5px solid #888888;
     background-color: white;
+    z-index: 1;
+    position: relative;
   }
-}
-
-.card-container {
-  width: 320px;
-  height: 400px;
-  border: 1px solid #e3b6b1;
-  position: absolute;
-  top: -24px;
-  left: 24px;
-  z-index: 0;
 }
 
 .profile-hair-stylist {
@@ -54,34 +94,8 @@
 }
 
 .image-container {
-  background-color: $light-pink;
-  z-index: 1;
+  background-color: $accent-color;
   position: relative;
-}
-
-.profile-bio {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 520px;
-  &__title {
-    font-size: 3rem;
-    font-family: $font-title;
-    color: #191919;
-    width: 100%;
-  }
-  &__text {
-    font-size: 1.2rem;
-    font-family: "Avenir", sans-serif;
-    color: #535353;
-    line-height: 24px;
-    max-width: 480px;
-  }
-  &__signature {
-    display: flex;
-    gap: 80px;
-    align-items: flex-end;
-  }
 }
 
 .brands {
@@ -91,44 +105,126 @@
   justify-content: center;
   gap: 20px;
   width: 100%;
+  p {
+    margin: 0;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
   &__special-feature {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     font-family: $font-text;
+    font-size: 1rem;
     font-weight: 350;
     color: #535353;
-  }
-
-  &__first-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
     width: 100%;
 
-    &__brand-img {
-      width: 114px;
-      opacity: 0.7;
-      // 黒色にする
-      filter: grayscale(100%);
+    &__border {
+      width: 100%;
+      border-top: 0.5px solid #888;
     }
   }
+  .about-card__img {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  &__img img {
+    opacity: 0.6;
+    max-width: 180px;
+  }
+}
 
-  &__second-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 56px;
-    width: 100%;
-
-    &__brand-img {
-      width: 80px;
-      opacity: 0.7;
-      // 黒色にする
-      filter: grayscale(100%);
+@include media-breakpoint-down(xl) {
+  .profile {
+    &__content-row {
+      margin: 40px 0;
     }
+    &__bio {
+      width: 520px;
+      &__title {
+        font-size: 2.5rem;
+      }
+      &__text {
+        font-size: 18px;
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .profile {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10vmin;
+    &__content-row {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 48px;
+      gap: 40px;
+    }
+    &__bio {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      width: 520px;
+
+      & img {
+        color: aqua;
+      }
+
+      &__title {
+        font-size: 2.5rem;
+        font-family: $font-title;
+        color: $dark-black;
+        text-align: center;
+        width: 100%;
+      }
+      &__text {
+        font-size: 20px;
+        font-family: "Avenir", sans-serif;
+        color: #535353;
+        text-align: center;
+        line-height: 24px;
+        max-width: 400px;
+      }
+      &__signature {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .profile {
+    &__content-row {
+      gap: 20px;
+    }
+    &__bio {
+      width: 100%;
+      &__title {
+        font-size: 2rem;
+      }
+      &__text {
+        font-size: 16px;
+        max-width: 320px;
+      }
+    }
+  }
+  .brands__img {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

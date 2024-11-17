@@ -100,367 +100,383 @@
         <button class="home-top-screen__btn">Free Consultation</button>
       </div>
     </div>
-    <div class="container  pb-4 pb-sm-5 pt-sm-5">
-      <div class="row align-items-center">
-        <!-- Profile Section -->
-        <div class="col-md-5" style="height: 400px;">
-          <div class="profile-card">
-            <div class="card-container"></div>
-            <div class="image-container">
-              <img src="public/assets/images/hair-stylist.png" alt="hair-stylist" class="profile-hair-stylist" />
+    <div class="profile">
+      <div class="profile-container container pb-4 pb-sm-5 pt-sm-5">
+        <div class="profile__content-row">
+          <div class="profile-card__img" style="height: 400px;">
+            <div class="profile-card">
+              <div class="profile-card__card-frame"></div>
+              <div class="image-container">
+                <img src="public/assets/images/hair-stylist.png" alt="hair-stylist" class="profile-hair-stylist" />
+              </div>
+              <div class="profile-card__account-name">
+                <img src="public/assets/images/icon-instagram.svg" alt="Aveda Logo" />
+                carlabeatrizs_
+              </div>
+              <div class="border-0">
+                <div class="profile-card__content">
+                  <img src="/public/assets/images/logos/loreal.png" alt="Loreal Logo" style="max-width: 100px" />
+                  <p class="text-muted mb-0">Official Certified Professional</p>
+                </div>
+              </div>
+
             </div>
-            <div class="profile-card__account-name">
-              <img src="public/assets/images/icon-instagram.svg" alt="Aveda Logo" />
-              carlabeatrizs_
+          </div>
+
+          <!-- Bio Section -->
+          <div class="profile__bio ">
+            <picture>
+              <source media="(max-width: 992px)" srcset="/public/assets/images/logo-small.png" width="40px"
+                height="40px">
+              <img src="public/assets/images/logos/cb-logo.png" alt="logo" />
+            </picture>
+            <h1 class="profile__bio__title">
+              Professional Makeup & Hairstyle Artist
+            </h1>
+            <p class="profile__bio__text">
+              10+ years creating stunning looks for weddings and special
+              occasions.
+            </p>
+            <div class="profile__bio__signature">
+              <button class="primary-btn">About Me</button>
+              <img src="public/assets/images/font-images/CarlaBeatriz.png" alt="Carla Beatriz" width="272px" />
             </div>
-            <div class="card border-0">
-              <div class="profile-card__content">
-                <img src="/public/assets/images/logos/loreal.png" alt="Loreal Logo" style="max-width: 100px" />
-                <p class="text-muted mb-0">Official Certified Professional</p>
+          </div>
+        </div>
+
+        <!-- Brands Section -->
+        <div class="brands mt-5">
+          <div class="brands__special-feature">
+            <div class="brands__special-feature__border"></div>
+            <p>Our Brands</p>
+            <div class="brands__special-feature__border">
+            </div>
+          </div>
+          <div class="col-md-10">
+            <ul class="brands__img row align-items-center justify-content-center p-0 ">
+              <li class="col-6 col-md-3 text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/mac.png" alt="mac" />
+              </li>
+              <li class="col-6 col-md-3  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/lancome.png" alt="lancome" />
+              </li>
+              <li class="col-6 col-md-3  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/inglot.png" alt="inglot" />
+              </li>
+              <li class="col-6 col-md-3  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/laura-mercier.png" alt="laura mercier" />
+              </li>
+              <li class="col-6 col-md-2  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/charlotte-tilbury.png"
+                  alt="charlotte tilbury" />
+              </li>
+              <li class="col-6 col-md-2  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/tarte.png" alt="tarte" />
+              </li>
+              <li class="col-6 col-md-2  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/anastasia.png" alt="anastasia" />
+              </li>
+              <li class="col-6 col-md-2  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/kryolan.png" alt="kryolan" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="column gap-5 align-items-center justify-content-center"
+          style="background-color: #FAE9E7; height:1440px;">
+
+          <div class="container text-center py-5 content-headline">
+            <h1 class="content-headline__title">YOU ARE A STAR</h1>
+            <p class="content-headline__border" style="margin:2rem auto"></p>
+            <div class="content-headline__text mb-5" style="min-width: 320px; max-width:400px;">
+              Shine effortlessly, embrace your unique features with absolute
+              confidence.
+            </div>
+            <button class="primary-btn">My Work</button>
+          </div>
+
+          <div class="carousel">
+            <div class="makeup-images">
+              <img src="/public/assets/images/women/1.png" alt="Makeup Work 1" class="makeup-images__image-container">
+              <img src="/public/assets/images/women/2.png" alt="Makeup Work 2" class="makeup-images__image-container">
+              <img src="/public/assets/images/women/3.png" alt="Makeup Work 3" class="makeup-images__image-container">
+              <img src="/public/assets/images/women/4.png" alt="Makeup Work 4" class="makeup-images__image-container">
+            </div>
+            <img width="44px" src="/public/assets/icons/quote.png" style="margin-top: 24px;">
+            <div class="testimonial-container">
+              <p class="quote">Carla is the best! She made me the night's brightest star! She stayed
+                with
+                me the whole wedding ensuring </p>
+              <p class="quote">I always looked and felt wonderful!!</p>
+
+              <div class="testimonial-navigation">
+                <button>
+                  <img src="/public/assets/icons/chevron_left.svg" alt="Quote" class="testimonial-navigation__arrow">
+                </button>
+                <img src="public/assets/images/font-images/Janny.png" alt="Carla Beatriz"
+                  class="testimonial-container__image">
+                <button>
+                  <img src="/public/assets/icons/chevron_right.svg" alt="Quote" class="testimonial-navigation__arrow">
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="container text-center py-5 content-headline">
+          <!-- Title Section -->
+          <h1 class="content-headline__title w-75">MAKEUP & HAIRSTYLE</h1>
+          <p class="content-headline__border" style="margin:2rem auto"></p>
+          <div class="content-headline__text mb-1" style="min-width: 320px;max-width:400px;">
+            We offer fully customizable plans to meet your unique requirements.
+          </div>
+          <button class="primary-btn primary- mt-3 mb-5">Get a Quote</button>
+        </div>
+        <!-- Services Section -->
+        <div class="row justify-content-around align-items-center">
+          <div class="col-md-4 text-center">
+            <div class="service-card">
+              <img src="/public/assets/images/women/5.png" alt="Party Look" class="section-image-side" />
+              <p class="service-label-side">Party</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="service-card">
+              <div class="service-card-border"></div>
+              <img src="/public/assets/images/women/6.png" alt="Wedding Look" class="section-image-center" />
+              <p class="service-label-center">Wedding</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="service-card">
+              <img src="/public/assets/images/women/7.png" alt="Photoshoot Look" class="section-image-side" />
+              <p class="service-label-side">Photoshoot</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="makeup-section">
+          <!-- Title -->
+          <div class="makeup-title">
+            <p style="margin-top:24px; ">MAKE UP </p>
+            <p style=" transform: scale(1, 1.5); letter-spacing:12px;"> 101</p>
+          </div>
+
+          <!-- Content Container -->
+          <div class="makeup-content">
+
+            <!-- Left Side: Class Information -->
+            <div class="makeup-classes">
+              <!-- 1-on-1 Master Class -->
+              <div class="class-item">
+                <div>
+                  <div class="class-title">
+                    <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
+                    <span class="class-text-one">1</span>-on-<span class="class-text-one">1</span> Master Class
+                  </div>
+                  <p class="class-description">
+                    Customize your learning experience to excel in your chosen areas, all at your own pace.
+                  </p>
+                </div>
+                <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
+
+              </div>
+
+              <!-- Professional 1-day Workshop -->
+              <div class="class-item">
+                <div>
+                  <div class="class-title">
+                    <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
+
+                    Professional <span class="class-text-one">1</span>-day Workshop
+                  </div>
+                  <p class="class-description">
+                    Discover popular and practical techniques to apply right away!
+                  </p>
+                </div>
+                <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
+              </div>
+
+              <!-- Self-Makeup Beginner Class -->
+              <div class="class-item">
+                <div>
+                  <div class="class-title">
+                    <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
+                    Self-Makeup Beginner Class
+                  </div>
+                  <p class="class-description">
+                    Learn the basics, practice doing your own makeup and make new friends in the process!
+                  </p>
+                </div>
+                <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
+              </div>
+
+              <!-- All Classes Button -->
+              <button class="primary-btn">All Classes</button>
+            </div>
+
+            <!-- Right Side: Image -->
+            <!-- 画像内に白の枠線を追加する -->
+            <div class="makeup-image-container">
+              <div class="makeup-image-border"></div>
+              <img src="public/assets/images/women/makeup-instructor.png" alt="Makeup Instructor"
+                class="makeup-image" />
+            </div>
+          </div>
+        </section>
+
+        <section class="beauty-corner">
+          <!-- Title -->
+          <h2 class="beauty-title">DIY Beauty Corner</h2>
+
+          <!-- Video Thumbnails Container -->
+          <div class="slider-container">
+            <div class="video-thumbnails">
+              <!-- Video 1 -->
+              <div class="video-card">
+                <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
+                <img src="/public/assets/images/instagrams-posts/1.jpeg" alt="Make up Be a queen" class="video-image">
+                <div class="video-overlay">
+                  <p class="video-description">✨Make up ✨ Be a queen in...</p>
+                </div>
+              </div>
+
+              <!-- Video 2 -->
+              <div class="video-card">
+                <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
+                <img src="/public/assets/images/instagrams-posts/2.jpeg" alt="Produce a beautiful bride"
+                  class="video-image">
+                <div class="video-overlay">
+                  <p class="video-description">Produce a beautiful bride✨...</p>
+                </div>
+              </div>
+
+              <!-- Video 3 -->
+              <div class="video-card">
+                <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
+                <img src="/public/assets/images/instagrams-posts/3.jpeg" alt="How to do stunning hair in 3"
+                  class="video-image">
+                <div class="video-overlay">
+                  <p class="video-description">How to do stunning hair in 3...</p>
+                </div>
               </div>
             </div>
+          </div>
 
-          </div>
-        </div>
+          <!-- Button for More Tips -->
+          <button class="primary-btn">More Beauty Tips</button>
+        </section>
 
-        <!-- Bio Section -->
-        <div class="profile-bio col-md-8">
-          <div>
-            <img src="public/assets/images/logos/cb-logo.png" alt="logo" />
-          </div>
-          <h1 class="profile-bio__title">
-            Professional Makeup & Hairstyle Artist
-          </h1>
-          <p class="profile-bio__text">
-            10+ years creating stunning looks for weddings and special
-            occasions.
-          </p>
-          <div class="profile-bio__signature">
-            <button class="primary-btn">About Me</button>
-            <img src="public/assets/images/font-images/CarlaBeatriz.png" alt="Carla Beatriz" width="272px" />
-          </div>
-        </div>
       </div>
-
-      <!-- Brands Section -->
-      <div class="brands mt-5">
-        <div class="brands__special-feature">
-          <hr width="480px" />
-          <p>Our Brands</p>
-          <hr width="480px" />
-        </div>
-        <div class="brands__first-row">
-          <img src="public/assets/images/logos/mac.png" alt="Aveda Logo"
-            class="brands__first-row__brand-img col-md-2" />
-          <img src="public/assets/images/logos/lancome.png" alt="Mac Logo"
-            class="brands__first-row__brand-img col-md-2" />
-          <img src="public/assets/images/logos/inglot.png" alt="Inglot Logo"
-            class="brands__first-row__brand-img col-md-2" />
-          <img src="public/assets/images/logos/laura-mercier.png" alt="Laura-Mercier Logo"
-            class="brands__first-row__brand-img col-md-2" />
-        </div>
-        <div class="brands__second-row">
-          <img src="public/assets/images/logos/charlotte-tilbury.png" alt="Aveda Logo"
-            class="brands__second-row__brand-img col-md-1" />
-          <img src="public/assets/images/logos/tarte.png" alt="Mac Logo" class="brands__second-row__brand-img" />
-          <img src="public/assets/images/logos/anastasia.png" alt="Loreal Logo" class="brands__second-row__brand-img" />
-          <img src="public/assets/images/logos/kryolan.png" alt="Revlon Logo" class="brands__second-row__brand-img" />
-        </div>
-      </div>
-    </div>
-
-    <div class="column gap-5 align-items-center justify-content-center"
-      style="background-color: #FAE9E7; height:1440px;">
 
       <div class="container text-center py-5 content-headline">
-        <h1 class="content-headline__title">YOU ARE A STAR</h1>
-        <p class="content-headline__border" style="margin:2rem auto"></p>
-        <div class="content-headline__text mb-5" style="min-width: 320px; max-width:400px;">
-          Shine effortlessly, embrace your unique features with absolute
-          confidence.
-        </div>
-        <button class="primary-btn">My Work</button>
-      </div>
-
-      <div class="carousel">
-        <div class="makeup-images">
-          <img src="/public/assets/images/women/1.png" alt="Makeup Work 1" class="makeup-images__image-container">
-          <img src="/public/assets/images/women/2.png" alt="Makeup Work 2" class="makeup-images__image-container">
-          <img src="/public/assets/images/women/3.png" alt="Makeup Work 3" class="makeup-images__image-container">
-          <img src="/public/assets/images/women/4.png" alt="Makeup Work 4" class="makeup-images__image-container">
-        </div>
-        <img width="44px" src="/public/assets/icons/quote.png" style="margin-top: 24px;">
-        <div class="testimonial-container">
-          <p class="quote">Carla is the best! She made me the night's brightest star! She stayed
-            with
-            me the whole wedding ensuring </p>
-          <p class="quote">I always looked and felt wonderful!!</p>
-
-          <div class="testimonial-navigation">
-            <button>
-              <img src="/public/assets/icons/chevron_left.svg" alt="Quote" class="testimonial-navigation__arrow">
-            </button>
-            <img src="public/assets/images/font-images/Janny.png" alt="Carla Beatriz"
-              class="testimonial-container__image">
-            <button>
-              <img src="/public/assets/icons/chevron_right.svg" alt="Quote" class="testimonial-navigation__arrow">
-            </button>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-    <div class="container text-center py-5 content-headline">
-      <!-- Title Section -->
-      <h1 class="content-headline__title w-75">MAKEUP & HAIRSTYLE</h1>
-      <p class="content-headline__border" style="margin:2rem auto"></p>
-      <div class="content-headline__text mb-1" style="min-width: 320px;max-width:400px;">
-        We offer fully customizable plans to meet your unique requirements.
-      </div>
-      <button class="primary-btn primary- mt-3 mb-5">Get a Quote</button>
-    </div>
-    <!-- Services Section -->
-    <div class="row justify-content-around align-items-center">
-      <div class="col-md-4 text-center">
-        <div class="service-card">
-          <img src="/public/assets/images/women/5.png" alt="Party Look" class="section-image-side" />
-          <p class="service-label-side">Party</p>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="service-card">
-          <div class="service-card-border"></div>
-          <img src="/public/assets/images/women/6.png" alt="Wedding Look" class="section-image-center" />
-          <p class="service-label-center">Wedding</p>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="service-card">
-          <img src="/public/assets/images/women/7.png" alt="Photoshoot Look" class="section-image-side" />
-          <p class="service-label-side">Photoshoot</p>
-        </div>
-      </div>
-    </div>
-
-    <section class="makeup-section">
-      <!-- Title -->
-      <div class="makeup-title">
-        <p style="margin-top:24px; ">MAKE UP </p>
-        <p style=" transform: scale(1, 1.5); letter-spacing:12px;"> 101</p>
-      </div>
-
-      <!-- Content Container -->
-      <div class="makeup-content">
-
-        <!-- Left Side: Class Information -->
-        <div class="makeup-classes">
-          <!-- 1-on-1 Master Class -->
-          <div class="class-item">
-            <div>
-              <div class="class-title">
-                <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
-                <span class="class-text-one">1</span>-on-<span class="class-text-one">1</span> Master Class
-              </div>
-              <p class="class-description">
-                Customize your learning experience to excel in your chosen areas, all at your own pace.
-              </p>
-            </div>
-            <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
-
-          </div>
-
-          <!-- Professional 1-day Workshop -->
-          <div class="class-item">
-            <div>
-              <div class="class-title">
-                <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
-
-                Professional <span class="class-text-one">1</span>-day Workshop
-              </div>
-              <p class="class-description">
-                Discover popular and practical techniques to apply right away!
-              </p>
-            </div>
-            <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
-          </div>
-
-          <!-- Self-Makeup Beginner Class -->
-          <div class="class-item">
-            <div>
-              <div class="class-title">
-                <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
-                Self-Makeup Beginner Class
-              </div>
-              <p class="class-description">
-                Learn the basics, practice doing your own makeup and make new friends in the process!
-              </p>
-            </div>
-            <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
-          </div>
-
-          <!-- All Classes Button -->
-          <button class="primary-btn">All Classes</button>
+        <!-- Title Section -->
+        <h1 class="content-headline__title">LET’S TALK</h1>
+        <div class="content-headline__text mb-5" style="min-width: 320px; max-width:480px;">
+          Check availability, pricing, and schedule a meeting for your special day
+          or our academy services.
         </div>
 
-        <!-- Right Side: Image -->
-        <!-- 画像内に白の枠線を追加する -->
-        <div class="makeup-image-container">
-          <div class="makeup-image-border"></div>
-          <img src="public/assets/images/women/makeup-instructor.png" alt="Makeup Instructor" class="makeup-image" />
-        </div>
-      </div>
-    </section>
+        <!-- Form Container -->
+        <div class="form-container p-5 mt-4 mx-auto">
+          <h4 class="form-title">Services</h4>
+          <hr width="500px" size="20px" />
+          <form class="column gap-4 align-items-start">
 
-    <section class="beauty-corner">
-      <!-- Title -->
-      <h2 class="beauty-title">DIY Beauty Corner</h2>
-
-      <!-- Video Thumbnails Container -->
-      <div class="slider-container">
-        <div class="video-thumbnails">
-          <!-- Video 1 -->
-          <div class="video-card">
-            <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
-            <img src="/public/assets/images/instagrams-posts/1.jpeg" alt="Make up Be a queen" class="video-image">
-            <div class="video-overlay">
-              <p class="video-description">✨Make up ✨ Be a queen in...</p>
-            </div>
-          </div>
-
-          <!-- Video 2 -->
-          <div class="video-card">
-            <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
-            <img src="/public/assets/images/instagrams-posts/2.jpeg" alt="Produce a beautiful bride"
-              class="video-image">
-            <div class="video-overlay">
-              <p class="video-description">Produce a beautiful bride✨...</p>
-            </div>
-          </div>
-
-          <!-- Video 3 -->
-          <div class="video-card">
-            <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
-            <img src="/public/assets/images/instagrams-posts/3.jpeg" alt="How to do stunning hair in 3"
-              class="video-image">
-            <div class="video-overlay">
-              <p class="video-description">How to do stunning hair in 3...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Button for More Tips -->
-      <button class="primary-btn">More Beauty Tips</button>
-    </section>
-
-    </div>
-
-    <div class="container text-center py-5 content-headline">
-      <!-- Title Section -->
-      <h1 class="content-headline__title">LET’S TALK</h1>
-      <div class="content-headline__text mb-5" style="min-width: 320px; max-width:480px;">
-        Check availability, pricing, and schedule a meeting for your special day
-        or our academy services.
-      </div>
-
-      <!-- Form Container -->
-      <div class="form-container p-5 mt-4 mx-auto">
-        <h4 class="form-title">Services</h4>
-        <hr width="500px" size="20px" />
-        <form class="column gap-4 align-items-start">
-
-          <div class="event-type-container gap-5">
-            <div>
-              <div class="event-title">Event Type</div>
-              <div class="event-options">
-                <div class="event-option selected">Wedding</div>
-                <div class="event-option">Party </div>
-                <div class="event-option">Photoshoot</div>
-              </div>
-            </div>
-
-            <div class="d-flex gap-3">
-              <div class="d-flex flex-column gap-1">
-                <div class="event-title">Event Date</div>
-                <div class="date-picker event-date">
-                  <input type="text" id="event-date" placeholder="Select Date">
+            <div class="event-type-container gap-5">
+              <div>
+                <div class="event-title">Event Type</div>
+                <div class="event-options">
+                  <div class="event-option selected">Wedding</div>
+                  <div class="event-option">Party </div>
+                  <div class="event-option">Photoshoot</div>
                 </div>
-                <div class="d-flex gap-2">
-                  <label class="d-flex gap-2 mt-2" for="not-decided-date">
-                    <input type="checkbox" value="" id="not-decided-date">
+              </div>
+
+              <div class="d-flex gap-3">
+                <div class="d-flex flex-column gap-1">
+                  <div class="event-title">Event Date</div>
+                  <div class="date-picker event-date">
+                    <input type="text" id="event-date" placeholder="Select Date">
+                  </div>
+                  <div class="d-flex gap-2">
+                    <label class="d-flex gap-2 mt-2" for="not-decided-date">
+                      <input type="checkbox" value="" id="not-decided-date">
+                      Not decided
+                    </label>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-1">
+                  <div class="event-title">Event Time</div>
+                  <div class="date-picker">
+                    <select>
+                      <option>Full day</option>
+                      <option>Morning</option>
+                      <option>Afternoon</option>
+                      <option>Evening</option>
+                    </select>
+                  </div>
+
+                  <label class="d-flex gap-2 mt-2" for="not-decided-time">
+                    <input type="checkbox" value="" id="not-decided-time">
                     Not decided
+                  </label>
+                </div>
+
+
+              </div>
+              <div style="width: 100%;">
+                <div class="event-title">Name</div>
+                <input type="text" class="event-name" placeholder="Your name" />
+              </div>
+
+
+              <div style="width: 100%;">
+                <div class="event-title">Contact</div>
+                <div class="contact-method-container">
+                  <label class="contact-option">
+                    <input type="radio" name="contact-method" data-target="phone-input" checked>
+                    Call
+                  </label>
+                  <div class="phone-input" id="phone-input">
+                    <select class="country-code">
+                      <option>+1</option>
+                      <option>+44</option>
+                      <option>+91</option>
+                      <!-- Add more country codes as needed -->
+                    </select>
+                    <input type="text" placeholder="Your mobile number">
+                  </div>
+
+                  <label class="contact-option">
+                    <input type="radio" name="contact-method">
+                    WhatsApp
+                  </label>
+                  <label class="contact-option">
+                    <input type="radio" name="contact-method">
+                    SMS
+                  </label>
+                  <label class="contact-option">
+                    <input type="radio" name="contact-method">
+                    Email
                   </label>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-1">
-                <div class="event-title">Event Time</div>
-                <div class="date-picker">
-                  <select>
-                    <option>Full day</option>
-                    <option>Morning</option>
-                    <option>Afternoon</option>
-                    <option>Evening</option>
-                  </select>
-                </div>
-
-                <label class="d-flex gap-2 mt-2" for="not-decided-time">
-                  <input type="checkbox" value="" id="not-decided-time">
-                  Not decided
-                </label>
-              </div>
-
 
             </div>
-            <div style="width: 100%;">
-              <div class="event-title">Name</div>
-              <input type="text" class="event-name" placeholder="Your name" />
-            </div>
 
-
-            <div style="width: 100%;">
-              <div class="event-title">Contact</div>
-              <div class="contact-method-container">
-                <label class="contact-option">
-                  <input type="radio" name="contact-method" data-target="phone-input" checked>
-                  Call
-                </label>
-                <div class="phone-input" id="phone-input">
-                  <select class="country-code">
-                    <option>+1</option>
-                    <option>+44</option>
-                    <option>+91</option>
-                    <!-- Add more country codes as needed -->
-                  </select>
-                  <input type="text" placeholder="Your mobile number">
-                </div>
-
-                <label class="contact-option">
-                  <input type="radio" name="contact-method">
-                  WhatsApp
-                </label>
-                <label class="contact-option">
-                  <input type="radio" name="contact-method">
-                  SMS
-                </label>
-                <label class="contact-option">
-                  <input type="radio" name="contact-method">
-                  Email
-                </label>
-              </div>
-            </div>
-
-
-          </div>
-
-          <button type="submit" class="primary-btn primary- primary-btn-block mt-4">
-            Submit
-          </button>
+            <button type="submit" class="primary-btn primary- primary-btn-block mt-4">
+              Submit
+            </button>
+        </div>
       </div>
-    </div>
 
-    </form>
+      </form>
     </div>
     </div>
   </main>
