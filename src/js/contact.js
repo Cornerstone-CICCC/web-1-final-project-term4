@@ -48,25 +48,21 @@ $(document).ready(function () {
 const form = document.getElementById("contact-form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  let fields = new FormData(form);
-  // TODO fix mail content
-  // const eventType = document.getElementById("event-type").querySelector(".selected").textContent;
-  // const eventDate =
-  //   !document.getElementById("not-decided-date").checked && document.getElementById("event-date").value
-  //     ? document.getElementById("event-date").value
-  //     : "not-decided";
-  // const eventTime =
-  //   !document.getElementById("not-decided-time").checked && document.getElementById("event-time").value
-  //     ? document.getElementById("event-time").value
-  //     : "not-decided";
-  // const name = document.getElementById("event-name").value;
-  sendMail(mail);
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData.entries());
+  sendMail(data);
 });
-function sendMail(mail) {
-  fetch("/send", {
-    method: "post",
-    body: mail,
-  }).then((response) => {
-    return response.json();
-  });
+
+async function sendMail(data) {
+  try {
+    const response = await fetch("/send", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {
+    console.error("Error:", error);
+  }
 }
