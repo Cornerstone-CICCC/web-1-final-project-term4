@@ -185,13 +185,12 @@
       </div>
     </div>
 
-    <div class="column gap-5 align-items-center justify-content-center"
-      style="background-color: #FAE9E7; height:1440px;">
+    <div class="review py-xl-5">
 
-      <div class="container text-center py-5 content-headline">
+      <div class="container text-center  content-headline">
         <h1 class="content-headline__title">YOU ARE A STAR</h1>
         <p class="content-headline__border" style="margin:2rem auto"></p>
-        <div class="content-headline__text mb-5" style="min-width: 320px; max-width:400px;">
+        <div class="content-headline__text mb-5" style="max-width:400px;">
           Shine effortlessly, embrace your unique features with absolute
           confidence.
         </div>
@@ -199,26 +198,33 @@
       </div>
 
       <div class="carousel">
-        <div class="makeup-images">
-          <img src="/public/assets/images/women/1.png" alt="Makeup Work 1" class="makeup-images__image-container">
-          <img src="/public/assets/images/women/2.png" alt="Makeup Work 2" class="makeup-images__image-container">
-          <img src="/public/assets/images/women/3.png" alt="Makeup Work 3" class="makeup-images__image-container">
-          <img src="/public/assets/images/women/4.png" alt="Makeup Work 4" class="makeup-images__image-container">
-        </div>
+        <ul class="makeup-images  p-0 ">
+          <li class="makeup-image__wrapper">
+            <img src="/public/assets/images/women/1.png" alt="Makeup Work 1" class=" col-md-3  makeup-image__content">
+          </li>
+          <li class="makeup-image__wrapper">
+            <img src="/public/assets/images/women/2.png" alt="Makeup Work 1" class=" col-md-3  makeup-image__content">
+          </li>
+          <li class="makeup-image__wrapper">
+            <img src="/public/assets/images/women/3.png" alt="Makeup Work 1" class=" col-md-3  makeup-image__content">
+          </li>
+          <li class="makeup-image__wrapper">
+            <img src="/public/assets/images/women/4.png" alt="Makeup Work 1" class=" col-md-3  makeup-image__content">
+          </li>
+        </ul>
         <img width="44px" src="/public/assets/icons/quote.png" style="margin-top: 24px;">
         <div class="testimonial-container">
           <p class="quote">Carla is the best! She made me the night's brightest star! She stayed
             with
             me the whole wedding ensuring </p>
-          <p class="quote">I always looked and felt wonderful!!</p>
 
           <div class="testimonial-navigation">
-            <button>
+            <button id="arrow_left">
               <img src="/public/assets/icons/chevron_left.svg" alt="Quote" class="testimonial-navigation__arrow">
             </button>
             <img src="public/assets/images/font-images/Janny.png" alt="Carla Beatriz"
               class="testimonial-container__image">
-            <button>
+            <button id="arrow_right">
               <img src="/public/assets/icons/chevron_right.svg" alt="Quote" class="testimonial-navigation__arrow">
             </button>
           </div>
@@ -321,9 +327,10 @@
 
         <!-- Right Side: Image -->
         <!-- 画像内に白の枠線を追加する -->
-        <div class="makeup-image-container">
-          <div class="makeup-image-border"></div>
-          <img src="public/assets/images/women/makeup-instructor.png" alt="Makeup Instructor" class="makeup-image" />
+        <div class="instructor-image-container">
+          <div class="instructor-image-border"></div>
+          <img src="public/assets/images/women/makeup-instructor.png" alt="Makeup Instructor"
+            class="instructor-image" />
         </div>
       </div>
     </section>
