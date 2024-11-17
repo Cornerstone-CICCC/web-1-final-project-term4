@@ -14,8 +14,6 @@ $text-color: #a97a6e;
 
 main {
   transition: padding $transition-speed ease, transform $transition-speed ease;
-  padding-top: $header-height-large;
-  background-color: #fbe8e3;  
   text-align: center;
 
   &.is-nav-small {
@@ -26,10 +24,13 @@ main {
 }
 
 .header {
-  background:$light-white;
+  position: sticky;
+  top: 0;
+  background: white;
   color: $bold-main-color;
   font-family: $font-title;
   font-size: 20px;
+  z-index: 1;
 }
 
 .header-nav {
@@ -75,10 +76,21 @@ main {
 
 }
 
+.content-bg{
+  background-color: #fbe8e3; 
+  font-family: $font-title;
+  padding-bottom: 1rem;
+ 
+
+}
+
 .title{
     margin-top: 50px;
     font-size: 2.5rem;
     color:$text-color;
+    font-family: $font-title;
+    font-size: 85px;
+
   }
 
   .below-title{
@@ -91,11 +103,18 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    gap: 50px;
+    border-bottom: 2px solid #a97a6e59;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+
+    
   
     a{
     color:$bold-main-color ;
-    padding: 10px 20px;
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: all 0.3s;
@@ -105,3 +124,55 @@ main {
     }
 
   }}
+
+  .container{
+    margin-top: 30px;
+    padding: 0 20px;
+
+    .portfolio-content{
+      img{
+        width: 100%;
+        height: 100%;
+        transition: trnasform 0.3s ease;
+        padding-bottom: 20px;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+    .content{
+      img{
+        width: 100%;
+        height: 100%;
+        transition: trnasform 0.3s ease;
+        padding-bottom: 20px;
+
+        &:hover {
+          transform: scale(1.05);
+          z-index: 0;
+        }
+      }
+    }
+    
+  }
+  .view-more {
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: #a97a6e;
+    background-color: transparent;
+    border: 1px solid #a97a6e;
+    transition: background-color 0.3s;
+  
+  
+    &:hover {
+      background-color: #a97a6e;
+      color: #fff;
+    }
+  }
+
+  .hidden{
+    display:none  
+  }
+  
