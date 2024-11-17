@@ -1,5 +1,7 @@
 require("dotenv").config();
 const express = require("express");
+const multiparty = require("multiparty");
+const nodemailer = require("nodemailer");
 const app = express();
 const path = require("path");
 
@@ -36,21 +38,31 @@ app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
+// Send email
+// Nodemailer transporter setup
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
+
 app.post("/send", (req, res) => {
   console.log(req.body);
-  // const mailOptions = {
-  //   from: `"Website Contact Form" <${process.env.EMAIL_USER}>`,
-  //   to: process.env.TARGET_EMAIL,
-  //   subject: `New Contact Form Submission from ${name}`,
-  //   text: `You have received a new message:\n\nName: ${name}\nMessage: ${message}`,
-  // };
+  const mailOptions = {
+    from: `"Website Contact Form" <${process.env.EMAIL_USER}>`,
+    to: process.env.EMAIL_USER,
+    subject: `New Contact Form Carla Beauty`,
+    text: `You have received a new message:\n\nMessage: ${message}`,
+  };
 
-  // transporter.sendMail(mailOptions, (error, info) => {
-  //   if (error) {
-  //     console.error(error);
-  //     return res.status(500).send('Failed to send email.');
-  //   }
-  //   console.log('Message sent: %s', info.messageId);
-  //   res.status(200).send('Message sent successfully!');
-  // });
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+      return res.status(500).send("Failed to send email.");
+    }
+    console.log("Message sent: %s", info.messageId);
+    res.status(200).send("Message sent successfully!");
+  });
 });
