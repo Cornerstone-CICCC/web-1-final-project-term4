@@ -1,0 +1,85 @@
+/* Container for the whole section */
+.beauty-corner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 5em;
+}
+
+/* Title styling */
+.beauty-title {
+  font-size: 3em;
+  font-family: $font-title;
+  color: #5e4d47;
+}
+
+/* Slider container to control overflow on smaller screens */
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
+/* Container for video thumbnails */
+.video-thumbnails {
+  display: flex;
+  gap: 2em;
+}
+
+.play-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+}
+
+/* Individual video card styling */
+.video-card {
+  position: relative;
+  min-width: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 0.5em;
+}
+
+.video-card:hover {
+  filter: brightness(70%);
+}
+
+/* Image inside video card */
+.video-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0% 25%;
+  display: block;
+}
+
+/* Overlay for video description and play icon */
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* Description text styling */
+.video-description {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}

@@ -1,0 +1,72 @@
+/* Service card styling */
+.service-card {
+  position: relative;
+  margin: 10px;
+  border-radius: 8px;
+  &::before {
+    content: "";
+  }
+}
+
+.service-card-border {
+  position: absolute;
+  top: -20px;
+  right: 12px;
+  border: 1px solid #e3b6b1;
+  width: 360px;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Service label styling */
+.service-label-side {
+  position: absolute;
+  bottom: 30px;
+  left: -10px;
+  color: #b99692;
+  font-size: 2.6rem;
+  font-weight: 700;
+  font-family: $font-title;
+  mix-blend-mode: screen;
+}
+
+/* Service label styling */
+.service-label-center {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+  color: #b99692;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: $font-title;
+  mix-blend-mode: screen;
+}
+
+.service-card:not(:nth-child(2n)):hover {
+  &::before {
+    @extend .service-card-border;
+    content: ""; // 疑似要素として必要
+  }
+}
+
+.section-image-side {
+  height: 384px;
+  width: 300px;
+  object-fit: cover;
+  z-index: 2;
+  position: relative;
+}
+
+.section-image-side:hover {
+  height: 420px;
+  width: 360px;
+  object-fit: cover;
+}
+
+.section-image-center {
+  height: 420px;
+  width: 360px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,48 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.makeup-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
+  &__image-container {
+    width: 332px;
+    object-fit: cover;
+  }
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .quote {
+    font-size: 2.4rem;
+    font-family: $font-title;
+    text-wrap: balance;
+    color: #5e4e49;
+    text-align: center;
+    line-height: 48px;
+  }
+}
+
+.testimonial-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin-top: 40px;
+  &__arrow {
+    width: 40px;
+    font-size: 2rem;
+    color: #5e4e49;
+    cursor: pointer;
+  }
+}

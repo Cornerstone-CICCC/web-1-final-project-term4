@@ -1,0 +1,94 @@
+/* Container for the whole section */
+.makeup-section {
+  margin: 5rem;
+  background-color: $light-pink;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title */
+.makeup-title {
+  font-size: 5rem;
+  color: $bold-main-color;
+  font-family: $font-title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+/* Main content area containing the text and image */
+.makeup-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/* Left content area with class descriptions */
+.makeup-classes {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* Individual class item */
+.class-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.class-item:hover {
+  background-color: rgba(227, 182, 177, 0.3);
+}
+
+/* Icon for each class */
+.class-icon {
+  margin-bottom: 12px;
+}
+
+.class-text-one {
+  font-size: 1.4em;
+}
+
+.class-title {
+  font-size: 2rem;
+  color: #6b4e4e;
+  font-family: $font-title;
+}
+
+/* Class description text */
+.class-description {
+  font-size: 1em;
+  color: #666;
+}
+
+.makeup-image-container {
+  position: relative;
+  background-color: $accent-color;
+}
+
+.makeup-image-border {
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  left: 20px;
+  width: 360px;
+  height: 480px;
+  border: 1px solid #fff;
+}
+
+/* Image area */
+.makeup-image {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 520px;
+  object-fit: cover;
+}

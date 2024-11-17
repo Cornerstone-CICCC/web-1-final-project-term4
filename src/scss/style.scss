@@ -4,6 +4,14 @@
 @import "./partials/common";
 @import "./partials/header";
 @import "./partials/footer";
-@import "./pages/index";
 @import "./pages/services";
 @import "./pages/about";
+
+// import file related to the home page
+@import "./pages/home/top";
+@import "./pages/home/profile";
+@import "./pages/home/review";
+@import "./pages/home/makeup-style";
+@import "./pages/home/workshop";
+@import "./pages/home/beauty-tips";
+@import "./pages/home/contact-form";
