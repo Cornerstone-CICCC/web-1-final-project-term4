@@ -11,15 +11,15 @@ $header-height-small: $logo-small + $padding-small * 2;
 $transition-speed: 0.5s;
 $text-color: #a97a6e;
 
-main {
-  transition: padding $transition-speed ease, transform $transition-speed ease;
-  text-align: center;
+// main {
+// transition: padding $transition-speed ease, transform $transition-speed ease;
+// text-align: center;
 
-  &.is-nav-small {
-    padding-top: $header-height-small;
-    background-color: rgb(10, 39, 39);
-  }
-}
+// &.is-nav-small {
+//   padding-top: $header-height-small;
+//   background-color: rgb(10, 39, 39);
+// }
+// }
 
 .header {
   position: sticky;
