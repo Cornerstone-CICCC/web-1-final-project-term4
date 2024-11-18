@@ -21,54 +21,54 @@ $text-color: #a97a6e;
 // }
 // }
 
-.header {
-  position: sticky;
-  top: 0;
-  background: white;
-  color: $bold-main-color;
-  font-family: $font-title;
-  font-size: 20px;
-  z-index: 10;
-}
+// .header {
+//   position: sticky;
+//   top: 0;
+//   background: white;
+//   color: $bold-main-color;
+//   font-family: $font-title;
+//   font-size: 20px;
+//   z-index: 10;
+// }
 
-.header-nav {
-  position: fixed;
-  right: 0;
-  left: 0;
-  transition: padding $transition-speed ease, transform $transition-speed ease;
-  padding: $padding-large 0;
-  background: $light-white;
-  .header-nav__logo {
-    width: 150px;
-    text-align: center;
-    img {
-      height: $logo-large;
-    }
-  }
-  &.is-nav-small {
-    padding: $padding-small 0;
-    .header-nav__logo img {
-      height: $logo-small;
-    }
-  }
-  &__list {
-    flex-grow: 1;
-    justify-content: space-around;
-  }
-  &__item {
-    flex-grow: 1;
-    text-align: center;
-    &:nth-child(n + 2) {
-      border-left: 0.5px solid $accent-color;
-    }
-    &.active {
-      text-decoration: underline;
-      text-decoration-color: $bold-main-color;
-      text-decoration-thickness: 0.5px;
-      text-underline-offset: 3px;
-    }
-  }
-}
+// .header-nav {
+//   position: fixed;
+//   right: 0;
+//   left: 0;
+//   transition: padding $transition-speed ease, transform $transition-speed ease;
+//   padding: $padding-large 0;
+//   background: $light-white;
+//   .header-nav__logo {
+//     width: 150px;
+//     text-align: center;
+//     img {
+//       height: $logo-large;
+//     }
+//   }
+//   &.is-nav-small {
+//     padding: $padding-small 0;
+//     .header-nav__logo img {
+//       height: $logo-small;
+//     }
+//   }
+//   &__list {
+//     flex-grow: 1;
+//     justify-content: space-around;
+//   }
+//   &__item {
+//     flex-grow: 1;
+//     text-align: center;
+//     &:nth-child(n + 2) {
+//       border-left: 0.5px solid $accent-color;
+//     }
+//     &.active {
+//       text-decoration: underline;
+//       text-decoration-color: $bold-main-color;
+//       text-decoration-thickness: 0.5px;
+//       text-underline-offset: 3px;
+//     }
+//   }
+// }
 
 .content-bg {
   background-color: #fbe8e3;
@@ -115,7 +115,6 @@ $text-color: #a97a6e;
 }
 
 .container {
-  margin-top: 30px;
   padding: 0 20px;
 
   .portfolio-content {
