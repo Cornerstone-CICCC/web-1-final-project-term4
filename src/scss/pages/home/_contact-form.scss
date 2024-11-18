@@ -7,24 +7,6 @@
   border: 1px solid #e0cccc;
 }
 
-.primary-btn {
-  border: 1px solid #644f4e;
-  color: #644f4e;
-  font-family: $font-title;
-  padding: 8px 24px;
-  height: 64px;
-  width: fit-content;
-  font-size: large;
-
-  // hover effect
-  &:hover {
-    background-color: #b99692;
-    border: none;
-    margin: 0 1px;
-    color: #fff;
-  }
-}
-
 .form-title {
   font-size: 2rem;
   font-family: $font-title;

@@ -21,7 +21,7 @@
 .slider-container {
   overflow: hidden;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1440px;
   margin: auto;
   position: relative;
 }
@@ -82,4 +82,29 @@
   margin: 0;
   font-size: 1.5em;
   line-height: 1.2em;
+}
+
+.slider-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.video-thumbnails {
+  display: flex;
+  gap: 16px;
+}
+
+.video-card {
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+@include media-breakpoint-up(xl) {
+  .slider-container {
+    overflow-x: hidden;
+  }
+
+  .video-thumbnails {
+    justify-content: center;
+  }
 }

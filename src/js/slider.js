@@ -1,41 +1,38 @@
-const carouselItems = [
-  {
-    text: "Carla is the best! She made me the night's brightest star! She stayed with me the whole  wedding ensuring I always looked and felt wonderful!!",
-    img: "/public/assets/images/font-images/Janny.png",
-  },
-  {
-    text: "Carla Beauty's makeup for my photoshoot was outstanding! Their expertise and attention to detail made me look perfect in every shot. Highly recommend",
-    img: "/public/assets/images/font-images/Ingrid.png",
-  },
-  {
-    text: "Carla Beauty's party makeup service was amazing! The makeup lasted all night, keeping me flawless until the end. Thank you, Carla for an unforgettable experience!",
-    img: "/public/assets/images/font-images/Marcela.png",
-  },
-];
-
-let currentIndex = 0;
-
-const quoteElement = document.querySelector(".quote");
-const imageElement = document.querySelector(".testimonial-container__image"); // 画像表示用
-const arrowLeft = document.getElementById("arrow_left");
-const arrowRight = document.getElementById("arrow_right");
-
-const updateQuotes = () => {
-  const currentItem = carouselItems[currentIndex];
-
-  quoteElement.textContent = currentItem.text;
-  imageElement.src = currentItem.img;
+$.prototype.draggable = function () {
+  var t;
+  $(this).each(function (i, e) {
+    $(e).mousedown(function (e2) {
+      e2.preventDefault();
+      t = $(e);
+      $(e).data({
+        down: true,
+        x: e2.clientX,
+        y: e2.clientY,
+        left: $(e).scrollLeft(),
+        top: $(e).scrollTop(),
+      });
+    });
+  });
+  $(document)
+    .mousemove(function (e) {
+      if ($(t).data("down")) {
+        e.preventDefault();
+        $(t).scrollLeft($(t).data("x") + $(t).data("left") - e.clientX);
+        $(t).scrollTop($(t).data("y") + $(t).data("top") - e.clientY);
+      }
+    })
+    .mouseup(function () {
+      $(t).data("down", false);
+    });
 };
 
-arrowLeft.addEventListener("click", () => {
-  currentIndex =
-    (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-  updateQuotes();
-});
+function enableDraggable() {
+  if ($(".slider-container").width() < $(".video-thumbnails").width()) {
+    $(".slider-container").addClass("scroll-enabled").draggable();
+  } else {
+    $(".slider-container").removeClass("scroll-enabled").off("mousedown");
+  }
+}
 
-arrowRight.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % carouselItems.length;
-  updateQuotes();
-});
-
-updateQuotes();
+$(document).ready(enableDraggable);
+$(window).resize(enableDraggable);
