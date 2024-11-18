@@ -228,3 +228,8 @@
     padding-left: 0;
   }
 }
+
+.about-me-button {
+  @include primary-btn;
+  width: 200px;
+}

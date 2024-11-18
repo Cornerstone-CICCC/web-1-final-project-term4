@@ -1,18 +1,5 @@
-.primary-btn {
-  border: 1px solid #644f4e;
-  color: #644f4e;
-  font-family: $font-title;
-  padding: 8px 24px;
-  height: 64px;
-  font-size: large;
-
-  // hover effect
-  &:hover {
-    background-color: #b99692;
-    border: none;
-    margin: 0 1px;
-    color: #fff;
-  }
+.all-classes-btn {
+  @include primary-btn;
 }
 
 /* Container for the whole section */
@@ -209,6 +196,10 @@
       font-size: 32px;
     }
   }
+
+  .all-classes-btn {
+    width: 80%;
+  }
 }
 
 // break point sm
@@ -264,5 +255,9 @@
     &::before {
       font-size: 24px;
     }
+  }
+
+  .all-classes-btn {
+    width: 50%;
   }
 }

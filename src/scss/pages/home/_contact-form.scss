@@ -63,22 +63,24 @@ input[type="radio"]:checked:before {
 .event-options {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
   gap: 12px;
+  width: 100%;
 }
 
 /* Style for each option */
 .event-option {
   padding: 8px 16px;
-  width: 160px;
+  width: 200px;
   height: 40px;
-  border: none; /* Border color */
+  border: 1px solid transparent;
   font-size: 1.2rem;
   line-height: 1;
   position: relative;
   color: #333;
   background-color: #fff;
   cursor: pointer;
-  transition: border-color 2s, background-color 2s;
+  transition: border-color 2s, background-color 2s height 2s;
   text-align: start;
   line-height: 28px;
   font-family: $font-title;
@@ -109,6 +111,20 @@ input[type="radio"]:checked:before {
   top: 12px;
   right: 12px;
   background: url("/public/assets/icons/check_circle.svg") no-repeat;
+}
+
+.event-date-time {
+  &__container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+}
+
+.event-date__container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* Main container for the date picker */
@@ -318,4 +334,52 @@ input[type="radio"]:checked::before {
 label {
   display: inline-flex;
   align-items: center;
+}
+
+@include media-breakpoint-down(lg) {
+  .form-container {
+    width: 100%;
+  }
+
+  .event-option {
+    height: 48px;
+  }
+  .contact-method-container {
+    width: 100%;
+  }
+  .event-type-container {
+    width: 100%;
+    align-items: center;
+  }
+  .event-options {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .event-option {
+    width: 100%;
+  }
+  .event-date-time {
+    &__container {
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      .event-date__container {
+        width: 100%;
+      }
+      .date-picker {
+        width: 100%;
+      }
+    }
+  }
+  .phone-input {
+    width: 100%;
+  }
+  .country-code {
+    width: 100px;
+  }
+}
+
+.submit-button {
+  @include primary-btn;
+  width: 100%;
 }

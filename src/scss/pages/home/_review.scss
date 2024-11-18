@@ -122,3 +122,13 @@
     gap: 32px;
   }
 }
+
+.my-work-button {
+  @include primary-btn;
+  width: 200px;
+}
+
+.get-quote-btn {
+  @include primary-btn;
+  width: 200px;
+}

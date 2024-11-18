@@ -97,7 +97,7 @@
         <p class="home-top-screen__subtitle">
           Vancouver's go-to makeup and hairstyle, with a Brazilian twist
         </p>
-        <button class="home-top-screen__btn">Free Consultation</button>
+        <button class="home-top-screen__btn" id="free-consultation">Free Consultation</button>
       </div>
     </div>
     <div class="profile">
@@ -138,7 +138,9 @@
               occasions.
             </p>
             <div class="profile__bio__signature">
-              <button class="primary-btn">About Me</button>
+              <button class="about-me-button">
+                <a href="/about">About Me</a>
+              </button>
               <img src="public/assets/images/font-images/CarlaBeatriz.png" alt="Carla Beatriz" width="272px" />
             </div>
           </div>
@@ -194,7 +196,9 @@
           Shine effortlessly, embrace your unique features with absolute
           confidence.
         </div>
-        <button class="primary-btn">My Work</button>
+        <button class="my-work-button">
+          <a href="/portfolio">My Work</a>
+        </button>
       </div>
 
       <div class="carousel">
@@ -239,7 +243,9 @@
       <div class="content-headline__text mb-1" style="min-width: 320px;max-width:400px;">
         We offer fully customizable plans to meet your unique requirements.
       </div>
-      <button class="primary-btn mt-3 mb-5">Get a Quote</button>
+      <button class="get-quote-btn mt-3 mb-5">
+        <a href="/services">Get a Quote</a>
+      </button>
     </div>
     <div class="style-cards">
       <div class="style-card__container col-md-3">
@@ -332,7 +338,7 @@
 
 
             <!-- All Classes Button -->
-            <button class="primary-btn">All Classes</button>
+            <button class="all-classes-btn">All Classes</button>
           </div>
 
           <!-- Right Side: Image -->
@@ -385,7 +391,7 @@
       </div>
 
       <!-- Button for More Tips -->
-      <button class="primary-btn">More Beauty Tips</button>
+      <button class="more-beauty-btn">More Beauty Tips</button>
     </section>
 
     </div>
@@ -401,11 +407,11 @@
       <!-- Form Container -->
       <div class="form-container p-5 mt-4 mx-auto">
         <h4 class="form-title">Services</h4>
-        <hr width="500px" size="20px" />
+        <hr width="100%" size="20px" />
         <form class="column gap-4 align-items-start">
 
           <div class="event-type-container gap-5">
-            <div>
+            <div class="flex-column gap-1 w-100 justify-content-center align-items-center">
               <div class="event-title">Event Type</div>
               <div class="event-options">
                 <div class="event-option selected">Wedding</div>
@@ -414,8 +420,8 @@
               </div>
             </div>
 
-            <div class="d-flex gap-3">
-              <div class="d-flex flex-column gap-1">
+            <div class="event-date-time__container">
+              <div class="event-date__container">
                 <div class="event-title">Event Date</div>
                 <div class="date-picker event-date">
                   <input type="text" id="event-date" placeholder="Select Date">
@@ -428,7 +434,7 @@
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-1">
+              <div class="event-date__container">
                 <div class="event-title">Event Time</div>
                 <div class="date-picker">
                   <select>
@@ -488,7 +494,7 @@
 
           </div>
 
-          <button type="submit" class="primary-btn primary- primary-btn-block mt-4">
+          <button type="submit" class="submit-button mt-4">
             Submit
           </button>
       </div>
@@ -571,6 +577,7 @@
   <script type="text/javascript" src="carousel.js"></script>
   <script type="text/javascript" src="slider.js"></script>
   <script type="text/javascript" src="floating-button.js"></script>
+  <script type="text/javascript" src="top-screen.js"></script>
 
   <script src="../index.js"></script>
 </body>

@@ -108,3 +108,7 @@
     justify-content: center;
   }
 }
+.more-beauty-btn {
+  @include primary-btn;
+  width: 240px;
+}

@@ -92,3 +92,21 @@
 .fab-menu-item:hover {
   background-color: #f0f0f0;
 }
+
+@mixin primary-btn {
+  border: 1px solid #644f4e;
+  color: #644f4e;
+  font-family: $font-title;
+  padding: 8px 24px;
+  height: 64px;
+  font-size: large;
+  width: fit-content;
+
+  // hover effect
+  &:hover {
+    background-color: #b99692;
+    border: none;
+    margin: 0 1px;
+    color: #fff;
+  }
+}
