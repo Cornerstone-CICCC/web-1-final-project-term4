@@ -1,0 +1,134 @@
+.review {
+  background-color: $light-pink;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  max-height: 1920px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  .makeup-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+
+    .makeup-image {
+      &__wrapper {
+        position: relative;
+        width: 25%;
+        height: auto;
+        object-fit: cover;
+      }
+      &__content {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .quote {
+      font-size: 32px;
+      font-family: $font-title;
+      text-wrap: balance;
+      color: #5e4e49;
+      text-align: center;
+      line-height: 48px;
+      max-width: 800px;
+    }
+
+    .testimonial-navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 64px;
+      margin-top: 40px;
+      &__arrow {
+        width: 40px;
+        font-size: 2rem;
+        color: #5e4e49;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .review {
+    height: 1440px;
+    padding: 24px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .review {
+    height: 1880px;
+  }
+  .carousel {
+    margin: 0 auto;
+    .makeup-images {
+      justify-content: center;
+      gap: 16px;
+      margin: 16px;
+      flex-wrap: wrap;
+      .makeup-image {
+        &__wrapper {
+          width: calc(50% - 20px);
+        }
+      }
+    }
+    .testimonial-container {
+      .quote {
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 640px;
+      }
+      .testimonial-navigation {
+        gap: 32px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .review {
+    height: 1600px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .review {
+    height: 1440px;
+  }
+
+  .makeup-images {
+    gap: 12px;
+  }
+  .testimonial-navigation {
+    gap: 32px;
+  }
+}
+
+.my-work-button {
+  @include primary-btn;
+  width: 200px;
+}
+
+.get-quote-btn {
+  @include primary-btn;
+  width: 200px;
+}

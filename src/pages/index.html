@@ -1,323 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home Page</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
+<head>
+  <title>Home Page</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- jQuery and jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
 
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <!-- Profile Section -->
-        <div class="col-md-4 text-center">
-          <div class="profile-card p-3">
-            <img
-              src="public/assets/images/hair-stylist.png"
-              alt="Profile Picture"
-              class="img-fluid rounded-circle mb-3"
-              width="100px"
-              height="100px" />
-            <p class="text-muted">@carlabeatriz</p>
-            <div class="card border-0 shadow-sm mt-2">
-              <div class="card-body text-center">
-                <img
-                  src="/public/assets/images/logos/anastasia.png"
-                  alt="Loreal Logo"
-                  class="img-fluid mb-2"
-                  style="max-width: 100px" />
-                <p class="text-muted mb-0">Official Certified Professional</p>
+<body style="padding:0%; background:transparent;">
+  <header class="header">
+    <div id="js-nav-sp" class="header-sp">
+      <div class="container justify-content-between align-items-center d-flex d-lg-none">
+        <button id="js-nav-sp-btn-open" class="header-sp__open">
+          <img src="public/assets/images/icon-menu.svg" alt="menu" width="40" />
+        </button>
+        <div class="header-sp__logo">
+          <a href="/">
+            <img src="public/assets/images/logo.png" alt="Carla Beauty" />
+          </a>
+        </div>
+        <a href="/">
+          <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="36" style="margin-left: 4px" />
+        </a>
+      </div>
+    </div>
+    <div id="js-nav-pc" class="header-nav d-lg-block" style="z-index: 100;">
+      <nav class="navbar navbar-expand-lg py-0">
+        <div class="container flex-column flex-lg-row position-relative">
+          <button id="js-nav-sp-btn-close" class="header-nav__close d-block d-lg-none">
+            <img src="public/assets/images/icon-cancel.svg" alt="close" width="40" />
+          </button>
+          <div class="header-nav__logo--sp d-block d-lg-none pb-4">
+            <a href="/">
+              <img src="public/assets/images/logo.png" alt="Carla Beauty" />
+            </a>
+          </div>
+          <ul class="header-nav__list navbar-nav align-self-center">
+            <li class="header-nav__item nav-item active"><a class="nav-link py-0" href="/">Home</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/portfolio">My Work</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/services">Services</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/Classes">Classes</a></li>
+          </ul>
+          <div class="header-nav__logo d-none d-lg-block">
+            <a href="/">
+              <img id="js-nav-pc-logo" src="public/assets/images/logo.png" alt="Carla Beauty" />
+            </a>
+          </div>
+          <ul class="header-nav__list navbar-nav align-self-center">
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/beautytips">Beauty Tips</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/about">About</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/contact">Contact</a></li>
+            <li class="header-nav__item d-none d-lg-block nav-item">
+              <a class="nav-link py-0" href="/">
+                <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
+              </a>
+            </li>
+          </ul>
+          <ul class="header-nav__sns d-block d-lg-none d-flex d-lg-none nav mt-4">
+            <li class="nav-item">
+              <a href="/" class="nav-link py-0 px-2">
+                <img src="public/assets/images/icon-call.svg" alt="call" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link py-0 px-2">
+                <img src="public/assets/images/icon-sms.svg" alt="sms" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link py-0 px-2">
+                <img src="public/assets/images/icon-instagram.svg" alt="instagram" />
+              </a>
+            </li>
+          </ul>
+          <p class="header-nav__copyright d-block d-lg-none text-center mt-3 mb-2">Copyright 2024, Carla Beauty</p>
+        </div>
+      </nav>
+    </div>
+    <div id="js-nav-sp-background" class="header-bg"></div>
+  </header>
+  <main>
+    <div class="home-top-screen">
+      <div class="home-top-screen__box text-white">
+        <img src="public/assets/images/font-images/Carla-Beauty.png" alt="Makeup Artist"
+          class="home-top-screen__img-fluid" />
+        <p class="home-top-screen__subtitle">
+          Vancouver's go-to makeup and hairstyle, with a Brazilian twist
+        </p>
+        <button class="home-top-screen__btn" id="free-consultation">Free Consultation</button>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="profile-container container pb-4 pb-sm-5 pt-sm-5">
+        <div class="profile__content-row">
+          <div class="profile-card__img" style="height: 400px;">
+            <div class="profile-card">
+              <div class="profile-card__card-frame"></div>
+              <div class="image-container">
+                <img src="public/assets/images/hair-stylist.png" alt="hair-stylist" class="profile-hair-stylist" />
               </div>
+              <div class="profile-card__account-name">
+                <img src="public/assets/images/icon-instagram.svg" alt="Aveda Logo" />
+                carlabeatrizs_
+              </div>
+              <div class="border-0">
+                <div class="profile-card__content">
+                  <img src="/public/assets/images/logos/loreal.png" alt="Loreal Logo" style="max-width: 100px" />
+                  <p class="text-muted mb-0">Official Certified Professional</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Bio Section -->
+          <div class="profile__bio ">
+            <picture>
+              <source media="(max-width: 992px)" srcset="/public/assets/images/logo-small.png" width="40px"
+                height="40px">
+              <img src="public/assets/images/logos/cb-logo.png" alt="logo" />
+            </picture>
+            <h1 class="profile__bio__title">
+              Professional Makeup & Hairstyle Artist
+            </h1>
+            <p class="profile__bio__text">
+              10+ years creating stunning looks for weddings and special
+              occasions.
+            </p>
+            <div class="profile__bio__signature">
+              <button class="about-me-button">
+                <a href="/about">About Me</a>
+              </button>
+              <img src="public/assets/images/font-images/CarlaBeatriz.png" alt="Carla Beatriz" width="272px" />
             </div>
           </div>
         </div>
 
-        <!-- Bio Section -->
-        <div class="col-md-8">
-          <h1 class="display-4 font-weight-bold">Professional Makeup & Hairstyle Artist</h1>
-          <p class="text-muted">10+ years creating stunning looks for weddings and special occasions.</p>
-          <button class="btn btn-outline-dark mt-3">About Me</button>
-          <p class="signature mt-4">Carla Beatriz</p>
-        </div>
-      </div>
-
-      <!-- Brands Section -->
-      <div class="brands mt-5 text-center">
-        <hr />
-        <p class="text-uppercase font-weight-bold text-muted">Our Brands</p>
-        <div class="row justify-content-center">
-          <div class="col-2 col-md-1">
-            <img src="mac-logo.png" class="img-fluid" alt="MAC" />
+        <!-- Brands Section -->
+        <div class="brands mt-5">
+          <div class="brands__special-feature">
+            <div class="brands__special-feature__border"></div>
+            <p>Our Brands</p>
+            <div class="brands__special-feature__border">
+            </div>
           </div>
-          <div class="col-2 col-md-1">
-            <img src="lancome-logo.png" class="img-fluid" alt="Lancome" />
-          </div>
-          <!-- Add more brand logos as needed -->
-        </div>
-      </div>
-    </div>
-
-    <div class="container text-center py-5">
-      <!-- Title Section -->
-      <h1 class="display-4 font-weight-bold">YOU ARE A STAR</h1>
-      <p class="text-muted mb-4">Shine effortlessly, embrace your unique features with absolute confidence.</p>
-      <button class="btn btn-outline-dark mb-5">My Work</button>
-
-      <!-- Gallery Section -->
-      <div class="row">
-        <div class="col-md-3">
-          <img src="image1.jpg" alt="Makeup Look 1" class="img-fluid rounded" />
-        </div>
-        <div class="col-md-3">
-          <img src="image2.jpg" alt="Makeup Look 2" class="img-fluid rounded" />
-        </div>
-        <div class="col-md-3">
-          <img src="image3.jpg" alt="Makeup Look 3" class="img-fluid rounded" />
-        </div>
-        <div class="col-md-3">
-          <img src="image4.jpg" alt="Makeup Look 4" class="img-fluid rounded" />
-        </div>
-      </div>
-
-      <!-- Testimonial Section -->
-      <div class="testimonial mt-5">
-        <p class="quote-icon">“</p>
-        <p class="testimonial-text">
-          Carla is the best! She made me the night's brightest star! She stayed with me the whole wedding ensuring I
-          always looked and felt wonderful!!
-        </p>
-        <p class="testimonial-author">- Jany</p>
-        <div class="testimonial-nav mt-3">
-          <span class="nav-arrow">&lt;</span>
-          <span class="nav-arrow">&gt;</span>
-        </div>
-      </div>
-    </div>
-    <div class="container text-center py-5">
-      <!-- Title Section -->
-      <h1 class="display-4 font-weight-bold">MAKEUP & HAIRSTYLE</h1>
-      <p class="text-muted">We offer fully customizable plans to meet your unique requirements.</p>
-      <button class="btn btn-outline-dark mt-3 mb-5">Get a Quote</button>
-
-      <!-- Services Section -->
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <div class="service-card">
-            <img src="party.jpg" alt="Party Look" class="img-fluid rounded" />
-            <p class="service-label">Party</p>
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="service-card">
-            <img src="wedding.jpg" alt="Wedding Look" class="img-fluid rounded" />
-            <p class="service-label">Wedding</p>
-          </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <div class="service-card">
-            <img src="photoshoot.jpg" alt="Photoshoot Look" class="img-fluid rounded" />
-            <p class="service-label">Photoshoot</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container py-5">
-      <!-- Title Section -->
-      <div class="text-center mb-5">
-        <h1 class="display-4 font-weight-bold">MAKE UP 101</h1>
-      </div>
-
-      <div class="row align-items-center">
-        <!-- Class Information Section -->
-        <div class="col-md-6">
-          <div class="class-info mb-4">
-            <h3 class="class-title">1-on-1 Master Class</h3>
-            <p class="class-description">
-              Customize your learning experience to excel in your chosen areas, all at your own pace.
-            </p>
-          </div>
-          <div class="class-info mb-4">
-            <h3 class="class-title">Professional 1-day Workshop</h3>
-            <p class="class-description">Discover popular and practical techniques to apply right away!</p>
-          </div>
-          <div class="class-info mb-4">
-            <h3 class="class-title">Self-Makeup Beginner Class</h3>
-            <p class="class-description">
-              Learn the basics, practice doing your own makeup and make new friends in the process!
-            </p>
-          </div>
-          <button class="btn btn-outline-dark mt-3">All Classes</button>
-        </div>
-
-        <!-- Image Section -->
-        <div class="col-md-6 text-center">
-          <div class="image-container">
-            <img src="class-image.jpg" alt="Makeup Instructor" class="img-fluid rounded" />
+          <div class="col-md-10">
+            <ul class="brands__img row align-items-center justify-content-center p-0 ">
+              <li class="col-6 col-md-3 text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/mac.png" alt="mac" />
+              </li>
+              <li class="col-6 col-md-3  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/lancome.png" alt="lancome" />
+              </li>
+              <li class="col-6 col-md-3  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/inglot.png" alt="inglot" />
+              </li>
+              <li class="col-6 col-md-3  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/laura-mercier.png" alt="laura mercier" />
+              </li>
+              <li class="col-6 col-md-2  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/charlotte-tilbury.png"
+                  alt="charlotte tilbury" />
+              </li>
+              <li class="col-6 col-md-2  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/tarte.png" alt="tarte" />
+              </li>
+              <li class="col-6 col-md-2  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/anastasia.png" alt="anastasia" />
+              </li>
+              <li class="col-6 col-md-2  text-center">
+                <img class="w-100 py-2 px-4" src="public/assets/images/logos/kryolan.png" alt="kryolan" />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container text-center py-5">
-      <!-- Title Section -->
-      <h2 class="display-4 font-weight-bold mb-4">DIY Beauty Corner</h2>
+    <div class="review py-xl-5">
 
-      <!-- Video Thumbnails Section -->
-      <div class="row justify-content-center">
-        <div class="col-md-4 mb-4">
-          <div class="video-card position-relative">
-            <img src="video1.jpg" alt="Video 1" class="img-fluid rounded" />
+      <div class="container text-center  content-headline">
+        <h1 class="content-headline__title">YOU ARE A STAR</h1>
+        <p class="content-headline__border" style="margin:2rem auto"></p>
+        <div class="content-headline__text mb-5" style="max-width:400px;">
+          Shine effortlessly, embrace your unique features with absolute
+          confidence.
+        </div>
+        <button class="my-work-button">
+          <a href="/portfolio">My Work</a>
+        </button>
+      </div>
+
+      <div class="carousel">
+        <ul class="makeup-images  p-0 ">
+          <li class="makeup-image__wrapper">
+            <img src="/public/assets/images/women/1.png" alt="Makeup Work 1" class=" col-md-3  makeup-image__content">
+          </li>
+          <li class="makeup-image__wrapper">
+            <img src="/public/assets/images/women/2.png" alt="Makeup Work 1" class=" col-md-3  makeup-image__content">
+          </li>
+          <li class="makeup-image__wrapper">
+            <img src="/public/assets/images/women/3.png" alt="Makeup Work 1" class=" col-md-3  makeup-image__content">
+          </li>
+          <li class="makeup-image__wrapper">
+            <img src="/public/assets/images/women/4.png" alt="Makeup Work 1" class=" col-md-3  makeup-image__content">
+          </li>
+        </ul>
+        <img width="44px" src="/public/assets/icons/quote.png" style="margin-top: 24px;">
+        <div class="testimonial-container">
+          <p class="quote">Carla is the best! She made me the night's brightest star! She stayed
+            with
+            me the whole wedding ensuring </p>
+
+          <div class="testimonial-navigation">
+            <button id="arrow_left">
+              <img src="/public/assets/icons/chevron_left.svg" alt="Quote" class="testimonial-navigation__arrow">
+            </button>
+            <img src="public/assets/images/font-images/Janny.png" alt="Carla Beatriz"
+              class="testimonial-container__image">
+            <button id="arrow_right">
+              <img src="/public/assets/icons/chevron_right.svg" alt="Quote" class="testimonial-navigation__arrow">
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="container text-center py-5 content-headline">
+      <h1 class="content-headline__title w-75">MAKEUP & HAIRSTYLE</h1>
+      <p class="content-headline__border" style="margin:2rem auto"></p>
+      <div class="content-headline__text mb-1" style="min-width: 320px;max-width:400px;">
+        We offer fully customizable plans to meet your unique requirements.
+      </div>
+      <button class="get-quote-btn mt-3 mb-5">
+        <a href="/services">Get a Quote</a>
+      </button>
+    </div>
+    <div class="style-cards">
+      <div class="style-card__container col-md-3">
+        <img src="/public/assets/images/women/5.png" alt="Party Look" class="style-card__image--side" />
+        <p class="style-card__label--side">Party</p>
+      </div>
+      <div class="style-card__container col-md-3 ">
+        <div class="style-card__frame"></div>
+        <img src="/public/assets/images/women/6.png" alt="Wedding Look" class="style-card__image--center" />
+        <p class="style-card__label--center">Wedding</p>
+      </div>
+      <div class="style-card__container col-md-3 ">
+        <img src="/public/assets/images/women/7.png" alt="Photoshoot Look" class="style-card__image--side" />
+        <p class="style-card__label--side">Photoshoot</p>
+      </div>
+    </div>
+
+    <div class="makeup">
+      <div class="w-100">
+
+        <div class="makeup-title">
+          <div>MAKE UP </div>
+          <p style=" transform: scale(1, 1.5); letter-spacing:12px;"> 101</p>
+        </div>
+
+        <div class="makeup-content" style="max-width: 1440px">
+
+          <div class="makeup-classes">
+            <div class="class__container">
+              <div class="class-item">
+                <div class="class-title">
+                  <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
+                  <div class="class-title__text">
+                    <span class="class-text-one">1</span>-on-<span class="class-text-one">1</span> Master Class
+                  </div>
+                </div>
+                <p class="class-description">
+                  Customize your learning experience to excel in your chosen areas, all at your own pace.
+                </p>
+
+              </div>
+              <div class="class-view">
+                <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
+              </div>
+            </div>
+
+            <!-- Professional 1-day Workshop -->
+            <div class="class__container">
+              <div class="class-item">
+                <div class="class-title">
+                  <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
+                  <div class="class-title__text">
+                    Professional
+                    <span class="class-text-one">1</span>
+                    -day
+                    <div class="second-row-text">
+                      Workshop
+                    </div>
+                  </div>
+                </div>
+                <p class="class-description">
+                  Discover popular and practical techniques to apply right away!
+                </p>
+              </div>
+              <div class="class-view">
+                <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
+              </div>
+            </div>
+
+            <!-- Self-Makeup Beginner Class -->
+            <div class="class__container">
+              <div class="class-item">
+                <div class="class-title">
+                  <img src="/public/assets/icons/vector.svg" alt="Makeup Icon" class="class-icon" />
+                  <div class="class-title__text">
+                    Self-Makeup
+                    <div class="second-row-text">
+                      Beginner class
+                    </div>
+                  </div>
+                </div>
+                <p class="class-description">
+                  Learn the basics, practice doing your own makeup and make new friends in the process!
+                </p>
+              </div>
+              <div class="class-view">
+                <img src="/public/assets/icons/chevron_right.svg" alt="Right Arrow" />
+              </div>
+            </div>
+
+
+            <!-- All Classes Button -->
+            <button class="all-classes-btn">All Classes</button>
+          </div>
+
+          <!-- Right Side: Image -->
+          <!-- 画像内に白の枠線を追加する -->
+          <div class="instructor-image-container">
+            <div class="instructor-image-border"></div>
+            <img src="public/assets/images/women/makeup-instructor.png" alt="Makeup Instructor"
+              class="instructor-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="beauty-corner">
+      <!-- Title -->
+      <h2 class="beauty-title">DIY Beauty Corner</h2>
+
+      <!-- Video Thumbnails Container -->
+      <div class="slider-container">
+        <div class="video-thumbnails">
+          <!-- Video 1 -->
+          <div class="video-card">
+            <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
+            <img src="/public/assets/images/instagrams-posts/1.jpeg" alt="Make up Be a queen" class="video-image">
             <div class="video-overlay">
-              <span class="video-play-icon">▶</span>
               <p class="video-description">✨Make up ✨ Be a queen in...</p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="video-card position-relative">
-            <img src="video2.jpg" alt="Video 2" class="img-fluid rounded" />
+
+          <!-- Video 2 -->
+          <div class="video-card">
+            <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
+            <img src="/public/assets/images/instagrams-posts/2.jpeg" alt="Produce a beautiful bride"
+              class="video-image">
             <div class="video-overlay">
-              <span class="video-play-icon">▶</span>
-              <p class="video-description">Produce a beautiful bride ✨...</p>
+              <p class="video-description">Produce a beautiful bride✨...</p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="video-card position-relative">
-            <img src="video3.jpg" alt="Video 3" class="img-fluid rounded" />
+
+          <!-- Video 3 -->
+          <div class="video-card">
+            <img src="/public/assets/icons/play.svg" alt="play video" class="play-icon">
+            <img src="/public/assets/images/instagrams-posts/3.jpeg" alt="How to do stunning hair in 3"
+              class="video-image">
             <div class="video-overlay">
-              <span class="video-play-icon">▶</span>
               <p class="video-description">How to do stunning hair in 3...</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Button Section -->
-      <button class="btn btn-outline-dark mt-3">More Beauty Tips</button>
+      <!-- Button for More Tips -->
+      <button class="more-beauty-btn">More Beauty Tips</button>
+    </section>
+
     </div>
 
-    <div class="container text-center py-5">
+    <div class="container text-center py-5 content-headline">
       <!-- Title Section -->
-      <h2 class="display-4 font-weight-bold mb-3">LET’S TALK</h2>
-      <p class="text-muted">
-        Check availability, pricing, and schedule a meeting for your special day or our academy services.
-      </p>
+      <h1 class="content-headline__title">LET’S TALK</h1>
+      <div class="content-headline__text mb-5" style="min-width: 320px; max-width:480px;">
+        Check availability, pricing, and schedule a meeting for your special day
+        or our academy services.
+      </div>
 
       <!-- Form Container -->
       <div class="form-container p-5 mt-4 mx-auto">
-        <h4 class="font-weight-bold text-center mb-4">Services</h4>
-        <form>
-          <!-- Event Type -->
-          <div class="form-group">
-            <label class="d-block font-weight-bold">Event Type</label>
-            <div class="btn-group btn-group-toggle d-flex" data-toggle="buttons">
-              <label class="btn btn-outline-dark flex-fill">
-                <input type="radio" name="eventType" autocomplete="off" /> Wedding
-              </label>
-              <label class="btn btn-outline-dark flex-fill">
-                <input type="radio" name="eventType" autocomplete="off" /> Party
-              </label>
-              <label class="btn btn-outline-dark flex-fill">
-                <input type="radio" name="eventType" autocomplete="off" /> Photoshoot
-              </label>
-            </div>
-          </div>
+        <h4 class="form-title">Services</h4>
+        <hr width="100%" size="20px" />
+        <form class="column gap-4 align-items-start">
 
-          <!-- Event Date & Time -->
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label class="font-weight-bold">Event Date</label>
-              <input type="date" class="form-control" placeholder="Select Date" />
-              <div class="form-check mt-2">
-                <input type="checkbox" class="form-check-input" id="dateNotDecided" />
-                <label class="form-check-label" for="dateNotDecided">Not decided</label>
+          <div class="event-type-container gap-5">
+            <div class="flex-column gap-1 w-100 justify-content-center align-items-center">
+              <div class="event-title">Event Type</div>
+              <div class="event-options">
+                <div class="event-option selected">Wedding</div>
+                <div class="event-option">Party </div>
+                <div class="event-option">Photoshoot</div>
               </div>
             </div>
-            <div class="form-group col-md-6">
-              <label class="font-weight-bold">Event Time</label>
-              <select class="form-control">
-                <option>Full day</option>
-                <option>Morning</option>
-                <option>Afternoon</option>
-                <option>Evening</option>
-              </select>
-              <div class="form-check mt-2">
-                <input type="checkbox" class="form-check-input" id="timeNotDecided" />
-                <label class="form-check-label" for="timeNotDecided">Not decided</label>
+
+            <div class="event-date-time__container">
+              <div class="event-date__container">
+                <div class="event-title">Event Date</div>
+                <div class="date-picker event-date">
+                  <input type="text" id="event-date" placeholder="Select Date">
+                </div>
+                <div class="d-flex gap-2">
+                  <label class="d-flex gap-2 mt-2" for="not-decided-date">
+                    <input type="checkbox" value="" id="not-decided-date">
+                    Not decided
+                  </label>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <!-- Name -->
-          <div class="form-group">
-            <label class="font-weight-bold">Name</label>
-            <input type="text" class="form-control" placeholder="Your name" />
-          </div>
-
-          <!-- Contact Method -->
-          <div class="form-group">
-            <label class="font-weight-bold">Contact</label>
-            <div class="form-check">
-              <input type="radio" name="contactMethod" class="form-check-input" id="contactCall" />
-              <label class="form-check-label" for="contactCall">Call</label>
-              <div class="input-group mt-2">
-                <div class="input-group-prepend">
-                  <select class="custom-select">
-                    <option>+1</option>
-                    <option>+44</option>
-                    <option>+81</option>
-                    <!-- Add more country codes as needed -->
+              <div class="event-date__container">
+                <div class="event-title">Event Time</div>
+                <div class="date-picker">
+                  <select>
+                    <option>Full day</option>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Evening</option>
                   </select>
                 </div>
-                <input type="tel" class="form-control" placeholder="Your mobile number" />
+
+                <label class="d-flex gap-2 mt-2" for="not-decided-time">
+                  <input type="checkbox" value="" id="not-decided-time">
+                  Not decided
+                </label>
+              </div>
+
+
+            </div>
+            <div style="width: 100%;">
+              <div class="event-title">Name</div>
+              <input type="text" class="event-name" placeholder="Your name" />
+            </div>
+
+
+            <div style="width: 100%;">
+              <div class="event-title">Contact</div>
+              <div class="contact-method-container">
+                <label class="contact-option">
+                  <input type="radio" name="contact-method" data-target="phone-input" checked>
+                  Call
+                </label>
+                <div class="phone-input" id="phone-input">
+                  <select class="country-code">
+                    <option>+1</option>
+                    <option>+44</option>
+                    <option>+91</option>
+                    <!-- Add more country codes as needed -->
+                  </select>
+                  <input type="text" placeholder="Your mobile number">
+                </div>
+
+                <label class="contact-option">
+                  <input type="radio" name="contact-method">
+                  WhatsApp
+                </label>
+                <label class="contact-option">
+                  <input type="radio" name="contact-method">
+                  SMS
+                </label>
+                <label class="contact-option">
+                  <input type="radio" name="contact-method">
+                  Email
+                </label>
               </div>
             </div>
-            <div class="form-check">
-              <input type="radio" name="contactMethod" class="form-check-input" id="contactWhatsApp" />
-              <label class="form-check-label" for="contactWhatsApp">WhatsApp</label>
-            </div>
-            <div class="form-check">
-              <input type="radio" name="contactMethod" class="form-check-input" id="contactSMS" />
-              <label class="form-check-label" for="contactSMS">SMS</label>
-            </div>
-            <div class="form-check">
-              <input type="radio" name="contactMethod" class="form-check-input" id="contactEmail" />
-              <label class="form-check-label" for="contactEmail">Email</label>
-            </div>
+
+
           </div>
 
-          <!-- Submit Button -->
-          <button type="submit" class="btn btn-outline-dark btn-block mt-4">Submit</button>
-        </form>
+          <button type="submit" class="submit-button mt-4">
+            Submit
+          </button>
       </div>
     </div>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"></script>
-    <script src="../index.js"></script>
-  </body>
+    </form>
+    </div>
+    </div>
+
+    <div class="fab">
+      <button class="fab-button" id="fab-button">
+        <img src="/public/assets/icons/floating-chat.png" alt="chat" />
+      </button>
+      <div class="fab-menu" id="fab-menu">
+        <a href="#" class="fab-menu-item">
+          <img src="/public/assets/icons/floating-instagram.png" alt="instagram" />
+        </a>
+        <a href="#" class="fab-menu-item">
+          <img src="/public/assets/icons/floating-call.png" alt="call" />
+        </a>
+        <a href="#" class="fab-menu-item">
+          <img src="/public/assets/icons/floating-whatsup.png" alt="whats-up" />
+        </a>
+        <button class="fab-menu-item" id="fab-menu-close">
+          <img src="/public/assets/icons/floating-close.png" alt="close" />
+        </button>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="container text-center py-4">
+      <div class="footer__logo">
+        <a href="/">
+          <img src="public/assets/images/logo.png" alt="Carla Beauty" width="126" />
+        </a>
+        <div class="footer__subtitle pt-3 pb-2">Expert makeup and hairstyle studio</div>
+      </div>
+      <ul class="footer__sns nav mb-4">
+        <li class="nav-item">
+          <a href="/" class="nav-link py-0 px-2">
+            <img src="public/assets/images/icon-call.svg" alt="call" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link py-0 px-2">
+            <img src="public/assets/images/icon-sms.svg" alt="sms" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link py-0 px-2">
+            <img src="public/assets/images/icon-instagram.svg" alt="instagram" />
+          </a>
+        </li>
+      </ul>
+      <div class="footer-nav">
+        <ul class="footer-nav__list navbar-nav py-2">
+          <li class="footer-nav__item nav-item px-2 active"><a href="/" class="nav-link py-0">Home</a></li>
+          <li class="footer-nav__item nav-item"><a href="/portfolio" class="nav-link py-0 px-2">My Work</a></li>
+          <li class="footer-nav__item nav-item"><a href="/services" class="nav-link py-0 px-2">Services</a></li>
+          <li class="footer-nav__item nav-item"><a href="/classes" class="nav-link py-0 px-2">Classes</a></li>
+          <li class="footer-nav__item nav-item"><a href="/beautytips" class="nav-link py-0 px-2">Beauty Tips</a></li>
+          <li class="footer-nav__item nav-item"><a href="/about" class="nav-link py-0 px-2">About</a></li>
+          <li class="footer-nav__item nav-item"><a href="/contact" class="nav-link py-0 px-2">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer__copyright text-center my-4">Copyright 2024, Carla Beauty</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="contact.js"></script>
+  <script type="text/javascript" src="header.js"></script>
+  <script type="text/javascript" src="carousel.js"></script>
+  <script type="text/javascript" src="slider.js"></script>
+  <script type="text/javascript" src="floating-button.js"></script>
+  <script type="text/javascript" src="top-screen.js"></script>
+
+  <script src="../index.js"></script>
+</body>
+
 </html>

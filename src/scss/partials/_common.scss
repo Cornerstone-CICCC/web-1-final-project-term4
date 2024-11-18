@@ -8,6 +8,7 @@
     letter-spacing: 6px;
     color: $bold-main-color;
     position: relative;
+    margin: 0 auto;
   }
   &__subtitle {
     font-family: $font-title;
@@ -40,5 +41,72 @@
       font-size: 16px;
       max-width: unset;
     }
+  }
+}
+
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.fab-button {
+  width: 56px;
+  height: 56px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fab-menu {
+  display: none;
+  position: relative;
+  bottom: 0px;
+  right: 0;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fab-menu.show {
+  display: flex;
+  opacity: 1;
+}
+
+.fab-menu-item {
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.fab-menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+@mixin primary-btn {
+  border: 1px solid #644f4e;
+  color: #644f4e;
+  font-family: $font-title;
+  padding: 8px 24px;
+  height: 64px;
+  font-size: large;
+  width: fit-content;
+
+  // hover effect
+  &:hover {
+    background-color: #b99692;
+    border: none;
+    margin: 0 1px;
+    color: #fff;
   }
 }
