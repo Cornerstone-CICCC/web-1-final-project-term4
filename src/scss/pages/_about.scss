@@ -1,0 +1,111 @@
+//about.scss
+.about {
+  background-color: $light-pink;
+  &:nth-last-child(1) {
+    background-color: $light-white;
+  }
+  .container {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .about-card__img {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+
+.about-card {
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    > * {
+      margin-bottom: 0;
+    }
+  }
+  h2 {
+    font-family: $font-title;
+    font-size: 40px;
+    color: $bold-main-color;
+  }
+  h3 {
+    font-family: $font-title;
+    font-size: 24px;
+    color: $dark-black;
+  }
+  p,
+  span {
+    font-size: 18px;
+    color: $dark-black;
+  }
+  button {
+    width: 170px;
+    font-family: $font-title;
+    color: $bold-main-color;
+    padding: 14px 0;
+    border: 0.8px solid $bold-main-color;
+    font-size: 20px;
+    transition: 0.2s;
+    &:hover {
+      color: $light-white;
+      border: 0.8px solid $complementary-pink;
+      background-color: $complementary-pink;
+    }
+  }
+}
+.about-brands {
+  h2 {
+    font-family: $font-title;
+    font-size: 48px;
+    color: $bold-main-color;
+  }
+  &__img img {
+    opacity: 0.6;
+    max-width: 180px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .about-card {
+    &__detail {
+      gap: 16px;
+    }
+    h2 {
+      margin-top: 24px;
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    p,
+    span {
+      font-size: 16px;
+    }
+    button {
+      margin: 0 auto;
+      width: 160px;
+      padding: 12px 0;
+      border: 0.8px solid $bold-main-color;
+      font-size: 20px;
+    }
+  }
+  .about-brands {
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .about {
+    background-color: $light-pink;
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .about-card__img {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
