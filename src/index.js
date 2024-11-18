@@ -1,6 +1,5 @@
 require("dotenv").config();
 const express = require("express");
-const multiparty = require("multiparty");
 const nodemailer = require("nodemailer");
 const app = express();
 const path = require("path");
@@ -41,7 +40,8 @@ app.listen(PORT, () => {
 // Send email
 // Nodemailer transporter setup
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "sandbox.smtp.mailtrap.io",
+  port: 2525,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
@@ -49,11 +49,13 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/send", (req, res) => {
+  console.log(JSON.stringify(req.body));
+
   const mailOptions = {
     from: `"Website Contact Form" <${process.env.EMAIL_USER}>`,
-    to: process.env.EMAIL_USER,
+    to: process.env.EMAIL_TO,
     subject: `New Contact Form Carla Beauty`,
-    text: `You have received a new message:\n\nMessage: ${req.body}`,
+    text: `You have received a new message:\n\nMessage:`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {

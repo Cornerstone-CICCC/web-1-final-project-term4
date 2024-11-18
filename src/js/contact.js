@@ -48,10 +48,7 @@ $(document).ready(function () {
 const form = document.getElementById("contact-form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData.entries());
-  sendMail(data);
-  resetForm();
+  sendMail();
 });
 
 function resetForm() {
@@ -61,7 +58,10 @@ function resetForm() {
   document.getElementById("contact-form").reset();
 }
 
-async function sendMail(data) {
+async function sendMail() {
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+
   try {
     const response = await fetch("/send", {
       method: "POST",
@@ -70,6 +70,7 @@ async function sendMail(data) {
     });
     const result = await response.json();
     console.log(result);
+    resetForm();
   } catch (error) {
     console.error("Error:", error);
   }
