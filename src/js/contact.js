@@ -61,7 +61,8 @@ function resetForm() {
 async function sendMail() {
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
-
+  const eventType = document.getElementById("event-type").querySelector(".selected").textContent;
+  data["event-type"] = eventType;
   try {
     const response = await fetch("/send", {
       method: "POST",
@@ -70,8 +71,8 @@ async function sendMail() {
     });
     const result = await response.json();
     console.log(result);
-    resetForm();
   } catch (error) {
     console.error("Error:", error);
   }
+  resetForm();
 }

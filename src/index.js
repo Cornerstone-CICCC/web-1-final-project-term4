@@ -49,13 +49,14 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/send", (req, res) => {
-  console.log(JSON.stringify(req.body));
-
+  const messages = Object.entries(req.body)
+    .map(([key, value]) => `${key}: ${value}`)
+    .join("\n");
   const mailOptions = {
     from: `"Website Contact Form" <${process.env.EMAIL_USER}>`,
     to: process.env.EMAIL_TO,
     subject: `New Contact Form Carla Beauty`,
-    text: `You have received a new message:\n\nMessage:`,
+    text: `You have received a new message:\n\nMessage:\n\n${messages}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
