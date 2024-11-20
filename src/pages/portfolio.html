@@ -1,209 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carla Beauty - Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div id="js-nav-sp" class="header-sp">
-        <div class="container justify-content-between align-items-center d-flex d-lg-none">
-          <button id="js-nav-sp-btn-open" class="header-sp__open">
-            <img src="public/assets/images/icon-menu.svg" alt="menu" width="40" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carla Beauty - Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div id="js-nav-sp" class="header-sp">
+      <div class="container justify-content-between align-items-center d-flex d-lg-none">
+        <button id="js-nav-sp-btn-open" class="header-sp__open">
+          <img src="public/assets/images/icon-menu.svg" alt="menu" width="40" />
+        </button>
+        <div class="header-sp__logo">
+          <a href="/">
+            <img src="public/assets/images/logo.png" alt="Carla Beauty" />
+          </a>
+        </div>
+        <a href="/">
+          <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="36" style="margin-left: 4px" />
+        </a>
+      </div>
+    </div>
+    <div id="js-nav-pc" class="header-nav d-lg-block">
+      <nav class="navbar navbar-expand-lg py-0">
+        <div class="container flex-column flex-lg-row position-relative">
+          <button id="js-nav-sp-btn-close" class="header-nav__close d-block d-lg-none">
+            <img src="public/assets/images/icon-cancel.svg" alt="close" width="40" />
           </button>
-          <div class="header-sp__logo">
+          <div class="header-nav__logo--sp d-block d-lg-none pb-4">
             <a href="/">
               <img src="public/assets/images/logo.png" alt="Carla Beauty" />
             </a>
           </div>
-          <a href="/">
-            <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="36" style="margin-left: 4px" />
-          </a>
-        </div>
-      </div>
-      <div id="js-nav-pc" class="header-nav d-lg-block">
-        <nav class="navbar navbar-expand-lg py-0">
-          <div class="container flex-column flex-lg-row position-relative">
-            <button id="js-nav-sp-btn-close" class="header-nav__close d-block d-lg-none">
-              <img src="public/assets/images/icon-cancel.svg" alt="close" width="40" />
-            </button>
-            <div class="header-nav__logo--sp d-block d-lg-none pb-4">
-              <a href="/">
-                <img src="public/assets/images/logo.png" alt="Carla Beauty" />
-              </a>
-            </div>
-            <ul class="header-nav__list navbar-nav align-self-center">
-              <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/">Home</a></li>
-              <li class="header-nav__item nav-item active"><a class="nav-link py-0" href="/portfolio">My Work</a></li>
-              <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/about">about</a></li>
-              <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/Classes">Classes</a></li>
-            </ul>
-            <div class="header-nav__logo d-none d-lg-block">
-              <a href="/">
-                <img id="js-nav-pc-logo" src="public/assets/images/logo.png" alt="Carla Beauty" />
-              </a>
-            </div>
-            <ul class="header-nav__list navbar-nav align-self-center">
-              <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/beautytips">Beauty Tips</a></li>
-              <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/about">About</a></li>
-              <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/contact">Contact</a></li>
-              <li class="header-nav__item d-none d-lg-block nav-item">
-                <a class="nav-link py-0" href="/">
-                  <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
-                </a>
-              </li>
-            </ul>
-            <ul class="header-nav__sns d-block d-lg-none d-flex d-lg-none nav mt-4">
-              <li class="nav-item">
-                <a href="/" class="nav-link py-0 px-2">
-                  <img src="public/assets/images/icon-call.svg" alt="call" />
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/" class="nav-link py-0 px-2">
-                  <img src="public/assets/images/icon-sms.svg" alt="sms" />
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/" class="nav-link py-0 px-2">
-                  <img src="public/assets/images/icon-instagram.svg" alt="instagram" />
-                </a>
-              </li>
-            </ul>
-            <p class="header-nav__copyright d-block d-lg-none text-center mt-3 mb-2">Copyright 2024, Carla Beauty</p>
-          </div>
-        </nav>
-      </div>
-      <div id="js-nav-sp-background" class="header-bg"></div>
-    </header>
-    <main>
-      <div class="content-headline">
-        <h1 class="content-headline__title text-center">MY WORK</h1>
-        <div class="content-headline__border"></div>
-        <p class="content-__text text-center">
-          With a decade of experience, each look highlights my passion for<br />
-          enhancing your individual beauty.
-        </p>
-      </div>
-
-      <div class="content-bg">
-        <div class="tabs d-flex justify-content-center mt-3">
-          <a href="#" class="active px-2" data-target="makeup">Makeup</a>
-          <a href="#" class="px-2" data-target="hairstyle"> Hairstyle</a>
-        </div>
-
-        <div class="container portfolio-grid mt-3">
-          <div id="makeup" class="row">
-            <div class="col-md-4 portfolio-content">
-              <img src="../../public/assets/images/garalley-women/1.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 portfolio-content">
-              <img src="../../public/assets/images/garalley-women/2.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 portfolio-content">
-              <img src="../../public/assets/images/garalley-women/3.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 portfolio-content">
-              <img src="../../public/assets/images/garalley-women/4.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 portfolio-content">
-              <img src="../../public/assets/images/garalley-women/5.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 portfolio-content">
-              <img src="../../public/assets/images/garalley-women/6.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 portfolio-content">
-              <img src="../../public/assets/images/garalley-women/7.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 portfolio-content">
-              <img src="../../public/assets/images/garalley-women/8.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 portfolio-content">
-              <img src="../../public/assets/images/garalley-women/9.png" class="img-fluid" />
-            </div>
-          </div>
-
-          <div id="hairstyle" class="row d-none">
-            <div class="col-md-4 content">
-              <img src="../../public/assets/images/garalley-women/10.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 content">
-              <img src="../../public/assets/images/garalley-women/11.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 content">
-              <img src="../../public/assets/images/garalley-women/12.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 content">
-              <img src="../../public/assets/images/garalley-women/13.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 content">
-              <img src="../../public/assets/images/garalley-women/14.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 content">
-              <img src="../../public/assets/images/garalley-women/15.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 content">
-              <img src="../../public/assets/images/garalley-women/16.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 content">
-              <img src="../../public/assets/images/garalley-women/17.png" class="img-fluid" />
-            </div>
-            <div class="col-md-4 content">
-              <img src="../../public/assets/images/garalley-women/18.png" class="img-fluid" />
-            </div>
-          </div>
-        </div>
-
-        <button class="btn btn-outline-secondary mt-3 view-more">View More</button>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="container text-center py-4 mt-0">
-        <div class="footer__logo">
-          <a href="/">
-            <img src="public/assets/images/logo.png" alt="Carla Beauty" width="126" />
-          </a>
-          <div class="footer__subtitle pt-3 pb-2">Expert makeup and hairstyle studio</div>
-        </div>
-        <ul class="footer__sns nav mb-4">
-          <li class="nav-item">
-            <a href="/" class="nav-link py-0 px-2">
-              <img src="public/assets/images/icon-call.svg" alt="call" />
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link py-0 px-2">
-              <img src="public/assets/images/icon-sms.svg" alt="sms" />
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link py-0 px-2">
-              <img src="public/assets/images/icon-instagram.svg" alt="instagram" />
-            </a>
-          </li>
-        </ul>
-        <div class="footer-nav">
-          <ul class="footer-nav__list navbar-nav py-2">
-            <li class="footer-nav__item nav-item px-2"><a href="/" class="nav-link py-0">Home</a></li>
-            <li class="footer-nav__item nav-item active">
-              <a href="/portfolio" class="nav-link py-0 px-2">My Work</a>
-            </li>
-            <li class="footer-nav__item nav-item"><a href="/services" class="nav-link py-0 px-2">Services</a></li>
-            <li class="footer-nav__item nav-item"><a href="/classes" class="nav-link py-0 px-2">Classes</a></li>
-            <li class="footer-nav__item nav-item"><a href="/beautytips" class="nav-link py-0 px-2">Beauty Tips</a></li>
-            <li class="footer-nav__item nav-item"><a href="/about" class="nav-link py-0 px-2">About</a></li>
-            <li class="footer-nav__item nav-item"><a href="/contact" class="nav-link py-0 px-2">Contact</a></li>
+          <ul class="header-nav__list navbar-nav align-self-center">
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/">Home</a></li>
+            <li class="header-nav__item nav-item active"><a class="nav-link py-0" href="/portfolio">My Work</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/about">about</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/Classes">Classes</a></li>
           </ul>
+          <div class="header-nav__logo d-none d-lg-block">
+            <a href="/">
+              <img id="js-nav-pc-logo" src="public/assets/images/logo.png" alt="Carla Beauty" />
+            </a>
+          </div>
+          <ul class="header-nav__list navbar-nav align-self-center">
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/beautytips">Beauty Tips</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/about">About</a></li>
+            <li class="header-nav__item nav-item"><a class="nav-link py-0" href="/contact">Contact</a></li>
+            <li class="header-nav__item d-none d-lg-block nav-item">
+              <a class="nav-link py-0" href="/">
+                <img src="public/assets/images/icon-instagram.svg" alt="instagram" width="24" height="24" />
+              </a>
+            </li>
+          </ul>
+          <ul class="header-nav__sns d-block d-lg-none d-flex d-lg-none nav mt-4">
+            <li class="nav-item">
+              <a href="/" class="nav-link py-0 px-2">
+                <img src="public/assets/images/icon-call.svg" alt="call" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link py-0 px-2">
+                <img src="public/assets/images/icon-sms.svg" alt="sms" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/" class="nav-link py-0 px-2">
+                <img src="public/assets/images/icon-instagram.svg" alt="instagram" />
+              </a>
+            </li>
+          </ul>
+          <p class="header-nav__copyright d-block d-lg-none text-center mt-3 mb-2">Copyright 2024, Carla Beauty</p>
         </div>
-        <p class="footer__copyright text-center my-4">Copyright 2024, Carla Beauty</p>
+      </nav>
+    </div>
+    <div id="js-nav-sp-background" class="header-bg"></div>
+  </header>
+  <main>
+    <div class="content-headline">
+      <h1 class="content-headline__title text-center">MY WORK</h1>
+      <div class="content-headline__border"></div>
+      <p class="content-__text text-center">
+        With a decade of experience, each look highlights my passion for<br />
+        enhancing your individual beauty.
+      </p>
+    </div>
+
+    <div class="content-bg">
+      <div class="tabs d-flex justify-content-center mt-3">
+        <a href="#" class="active px-2" data-target="makeup">Makeup</a>
+        <a href="#" class="px-2" data-target="hairstyle"> Hairstyle</a>
       </div>
-    </footer>
-    <script type="text/javascript" src="portfolio.js"></script>
-    <script type="text/javascript" src="header.js"></script>
-    <script type="text/javascript" src="../index.js"></script>
-  </body>
+
+      <div class="container portfolio-grid mt-3 text-center">
+        <div id="makeup" class="row">
+          <div class="col-md-4 portfolio-content">
+            <img src="../../public/assets/images/garalley-women/1.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 portfolio-content">
+            <img src="../../public/assets/images/garalley-women/2.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 portfolio-content">
+            <img src="../../public/assets/images/garalley-women/3.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 portfolio-content">
+            <img src="../../public/assets/images/garalley-women/4.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 portfolio-content">
+            <img src="../../public/assets/images/garalley-women/5.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 portfolio-content">
+            <img src="../../public/assets/images/garalley-women/6.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 portfolio-content">
+            <img src="../../public/assets/images/garalley-women/7.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 portfolio-content">
+            <img src="../../public/assets/images/garalley-women/8.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 portfolio-content">
+            <img src="../../public/assets/images/garalley-women/9.png" class="img-fluid" />
+          </div>
+        </div>
+
+        <div id="hairstyle" class="row d-none">
+          <div class="col-md-4 content">
+            <img src="../../public/assets/images/garalley-women/10.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 content">
+            <img src="../../public/assets/images/garalley-women/11.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 content">
+            <img src="../../public/assets/images/garalley-women/12.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 content">
+            <img src="../../public/assets/images/garalley-women/13.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 content">
+            <img src="../../public/assets/images/garalley-women/14.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 content">
+            <img src="../../public/assets/images/garalley-women/15.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 content">
+            <img src="../../public/assets/images/garalley-women/16.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 content">
+            <img src="../../public/assets/images/garalley-women/17.png" class="img-fluid" />
+          </div>
+          <div class="col-md-4 content">
+            <img src="../../public/assets/images/garalley-women/18.png" class="img-fluid" />
+          </div>
+        </div>
+        <button class="btn btn-outline-secondary mt-3 view-more ">View More</button>
+      </div>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container text-center py-4 mt-0">
+      <div class="footer__logo">
+        <a href="/">
+          <img src="public/assets/images/logo.png" alt="Carla Beauty" width="126" />
+        </a>
+        <div class="footer__subtitle pt-3 pb-2">Expert makeup and hairstyle studio</div>
+      </div>
+      <ul class="footer__sns nav mb-4">
+        <li class="nav-item">
+          <a href="/" class="nav-link py-0 px-2">
+            <img src="public/assets/images/icon-call.svg" alt="call" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link py-0 px-2">
+            <img src="public/assets/images/icon-sms.svg" alt="sms" />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/" class="nav-link py-0 px-2">
+            <img src="public/assets/images/icon-instagram.svg" alt="instagram" />
+          </a>
+        </li>
+      </ul>
+      <div class="footer-nav">
+        <ul class="footer-nav__list navbar-nav py-2">
+          <li class="footer-nav__item nav-item px-2"><a href="/" class="nav-link py-0">Home</a></li>
+          <li class="footer-nav__item nav-item active">
+            <a href="/portfolio" class="nav-link py-0 px-2">My Work</a>
+          </li>
+          <li class="footer-nav__item nav-item"><a href="/services" class="nav-link py-0 px-2">Services</a></li>
+          <li class="footer-nav__item nav-item"><a href="/classes" class="nav-link py-0 px-2">Classes</a></li>
+          <li class="footer-nav__item nav-item"><a href="/beautytips" class="nav-link py-0 px-2">Beauty Tips</a></li>
+          <li class="footer-nav__item nav-item"><a href="/about" class="nav-link py-0 px-2">About</a></li>
+          <li class="footer-nav__item nav-item"><a href="/contact" class="nav-link py-0 px-2">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer__copyright text-center my-4">Copyright 2024, Carla Beauty</p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="portfolio.js"></script>
+  <script type="text/javascript" src="header.js"></script>
+  <script type="text/javascript" src="../index.js"></script>
+</body>
+
 </html>
